@@ -20,6 +20,13 @@
                     <input type="text" id="lastName" value="lastName" />
                 </p>
                 <p>
+                    <label>What Are You Looking For?:</label>
+                    <input type="radio" name="distance" value="10">Mentor
+                    <input type="radio" name="distance" value="20">Tutor
+                    <input type="radio" name="distance" value="50">Both
+                    <br>
+                </p>
+                <p>
                     <label>Career Interest</label>
                     <select id="careerList">
                         <option value="1">Tech</option>
@@ -44,13 +51,10 @@
                         <option value="4">Japanese</option>
                     </select>
                 </p>
+                <div wrapper="buttons">
                 <input type="submit" value="Submit now">
-                <!-- <p>
-                    <label>Text Area</label>
-                    <textarea> id = "myTextArea"
-                            rows = "3"
-                            cols = "80">Your text here</textarea>
-                  </p> -->
+                <input type="submit" value="Cancel now">
+                </div>
             </fieldset>
         </form>
     </article>

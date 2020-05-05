@@ -1,32 +1,63 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
 /*************Header****/
 header{
     background-color: #41B3A3;
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center ;
     padding:30px 10%;
 }
 
 li a{
     text-decoration: none;
+    font:"Montserrat",sans-serif;
     font-weight:400;
-    font-size:18px;
+    font-size:25px;
+    padding: 10px;
+    text-transform: uppercase;
+    color:black;
 
 }
-
-
 nav li{
     list-style-type: none;
+    display: inline-block;
 }
+
+nav li a{
+    transition: all 0.3s ease 0s;
+}
+
+nav li a:hover{
+    color:white;
+}
+
 #hero-main{
-    min-height:500px;
+    background: url(/photos/heromentor.jpg) no-repeat center center/cover;
+    height:400px;
+    
 }
+
+.container{
+    display:flex;
+    justify-content: center;
+  align-items: center;
+
+}
+
+
 /* Info Cards */
 .infoCards{
+    height: 600px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .card-1, .card-2, .card-3{
@@ -36,7 +67,23 @@ nav li{
     text-align: center;
     border-radius: 1em;
 }
+/* Featured Mentors */
+.mentors{
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    background-color: #c38d9e;
+    position: relative;
 
+}
+#mentor-1, #mentor-2, #mentor-3{
+    text-align: center;
+    border: 1px solid black;
+    position: absolute;
+
+
+}
 
 
 /* --------FOOTER -----------
@@ -45,15 +92,46 @@ nav li{
 
 .footerContainer {
     width: 100%;
-    height: 300px;
+    height: 175px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+.footerContainer h3 {
+    padding: 20px;
+}
+
+.contactUs {
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .contactUs ul {
     list-style: none;
 }
 
-.socialMedia ul {
+.socialMedia {
+    width: 300px;
+    text-align: center;
+}
+
+.socialMedia li {
     list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.quickLinks {
+    width: 300px;
+    text-align: center;
+}
+
+.quickLinks ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.copyright p {
+    text-align: center;
 }
