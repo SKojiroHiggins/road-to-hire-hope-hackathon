@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
 /*************Header****/
 header{
     background-color: #41B3A3;
@@ -22,12 +29,14 @@ nav li{
 #hero-main{
     min-height:500px;
 }
+
+
 /* Info Cards */
 .infoCards{
-    height: 100vh;
+    height: 600px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .card-1, .card-2, .card-3{
@@ -46,15 +55,46 @@ nav li{
 
 .footerContainer {
     width: 100%;
-    height: 300px;
+    height: 175px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+.footerContainer h3 {
+    padding: 20px;
+}
+
+.contactUs {
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .contactUs ul {
     list-style: none;
 }
 
-.socialMedia ul {
+.socialMedia {
+    width: 300px;
+    text-align: center;
+}
+
+.socialMedia li {
     list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.quickLinks {
+    width: 300px;
+    text-align: center;
+}
+
+.quickLinks ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.copyright p {
+    text-align: center;
 }
