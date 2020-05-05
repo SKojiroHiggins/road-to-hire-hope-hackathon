@@ -1,29 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
     <title>Document</title>
 </head>
+
 <body>
+    <header>
+        <img class="logo" src="" alt="">
+        <nav>
+            <ul class="mixer-nav">
+                <li><a class="current" href="index.html">Home</a> </li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div id="map"></div>
+
+    <footer>
+        <section class="footerContainer">
+            <div class="contactUs">
+                <h3>CONTACT US</h3>
+                <ul>
+                    <li>704-333-3333</li>
+                    <li>contact@mentormixer.com</li>
+                </ul>
+            </div>
+            <div class="socialMedia">
+                <H3>STAY CONNECTED</H3>
+                <ul>
+                    <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa fa-facebook fa-lg"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.twitter.com/" aria-label="Twitter"><i class="fa fa-twitter fa-lg"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa fa-instagram fa-lg"
+                                aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="quickLinks">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>FAQs</li>
+                    <li>For Mentees</li>
+                    <li>For Mentors / Tutors</li>
+                </ul>
+            </div>
+
+        </section>
+        <div class="copyright">
+            <p>© MENTOR MIXER</p>
+        </div>
+    </footer>
 </body>
 
 <script>
     function initMap() {
-        var location = { lat: 35.007599, lng: -80.94321 };
-        var map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 4,
-            center: location
-        });
-        var marker = new google.maps.Marker({
-            position: location,
-            map: map
-        });
+        //Map options
+        var options = {
+            zoom: 8,
+            center: { lat: 35.007599, lng: -80.94321 }
+        }
+
+        //New map
+        var map = new
+            google.maps.Map(document.getElementById("map"), options);
+
+        if (!map) {
+            res.status(404).send(`Not Found`)
+
+        }
+
+        var markers = [
+            {
+                coords: { lat: 35.007599, lng: -80.94321 },
+                //iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                content: '<h1>Headquaters: Fort Mill, SC</h1>'
+            },
+            {
+                coords: { lat: 35.2272, lng: -80.8461 },
+                content: '<h1>Headquaters: Charlotte, NC</h1>'
+            },
+            //{ coords: { lat: 35.1168, lng: -80.7237 }}
+        ];
+
+        //loop through markers
+        for (var i = 0; i < markers.length; i++) {
+            //Add Marker
+            addMarker(markers[i]);
+        }
+
+        //Add Marker Function
+        function addMarker(props) {
+            var marker = new google.maps.Marker({
+                position: props.coords,
+                map: map,
+                //icon: props.iconImage
+            });
+
+            //Check for customicon
+            if (props.iconImage) {
+                //Set icon image
+                marker.setIcon(props.iconImage);
+            }
+
+            //Check content
+            if (props.content) {
+                var infoWindow = new google.maps.InfoWindow({
+                    content: props.content
+                });
+
+                marker.addListener('click', function () {
+                    infoWindow.open(map, marker);
+                });
+            }
+        }
     }
 
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiBs49ob-Gh2WXDZsMVXLFO-rmoy14bDI&callback=initMap"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDozSqDbP25gp28gZHBaqN-1MdTm9B5YXY&callback=initMap"></script>
 
 </html>
