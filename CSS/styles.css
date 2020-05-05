@@ -44,13 +44,11 @@ nav li a:hover{
     
 }
 
-<<<<<<< HEAD
 /* MAP API */
 #map {
     height: 500px;
     width: 100%;
 }
-=======
 .container{
     display:flex;
     justify-content: center;
@@ -76,7 +74,6 @@ nav li a:hover{
 }
 
 
->>>>>>> origin/front-end
 
 /* --------FOOTER -----------
 -----------------------------
