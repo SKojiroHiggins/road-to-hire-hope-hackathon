@@ -86,7 +86,7 @@ nav li a:hover{
     margin: auto;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 2fr 1fr);
 }
 
 
