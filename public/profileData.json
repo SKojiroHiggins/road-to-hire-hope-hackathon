@@ -1,0 +1,26 @@
+[
+    {
+        "name": "fake name1",
+        "profession": "fake profession1",
+        "interests": {
+            "interest1": "fake interest1",
+            "interest2": "fake interest2"
+        }
+    },
+    {
+        "name": "fake name2",
+        "profession": "fake profession2",
+        "interests": {
+            "interest1": "fake interest1",
+            "interest2": "fake interest2"
+        }
+    },
+    {
+        "name": "fake name3",
+        "profession": "fake profession3",
+        "interests": {
+            "interest1": "fake interest1",
+            "interest2": "fake interest2"
+        }
+    }
+]
