@@ -3,24 +3,45 @@
 header{
     background-color: #41B3A3;
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center ;
     padding:30px 10%;
 }
 
 li a{
     text-decoration: none;
+    font:"Montserrat",sans-serif;
     font-weight:400;
-    font-size:18px;
+    font-size:25px;
+    padding: 10px;
+    text-transform: uppercase;
+    color:black;
 
 }
-
-
 nav li{
     list-style-type: none;
+    display: inline-block;
 }
+
+nav li a{
+    transition: all 0.3s ease 0s;
+}
+
+nav li a:hover{
+    color:white;
+}
+
 #hero-main{
-    min-height:500px;
+    background: url(/photos/heromentor.jpg) no-repeat center center/cover;
+    height:400px;
+    
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+  align-items: center;
+
 }
 /* Info Cards */
 .infoCards{
