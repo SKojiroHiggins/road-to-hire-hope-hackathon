@@ -22,7 +22,21 @@ nav li{
 #hero-main{
     min-height:500px;
 }
+/* Info Cards */
+.infoCards{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.card-1, .card-2, .card-3{
+    border: 5px dashed #41b3a3;
+    background-color: rgb(230, 224, 224);
+    margin: 5px;
+    text-align: center;
+    border-radius: 1em;
+}
 
 
 
