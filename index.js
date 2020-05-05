@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
-
+const url = "http://api.unsplash.com/search/photos?query=face&client_id=kPkqiVr4Rkgy8bXbpk04aSDnygTOzWZZBPI3vjO2ACo"
 app.set('view engine', 'ejs'); // ejs is a template engine. allows access to html
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(express.static('public')); // render static files
