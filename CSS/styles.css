@@ -73,12 +73,20 @@ nav li a:hover{
     color:white;
 }
 
+
+
+/* --------BODY-----------
+-----------------------------
+----------------------------- */
+
+
+
 /* Info Cards */
 .infoCards{
-    height: 600px;
+    height: 300px;
     display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
+    justify-content: space-evenly;
+    padding-top: 75px;
 }
 
 .card-1, .card-2, .card-3{
@@ -88,6 +96,20 @@ nav li a:hover{
     text-align: center;
     border-radius: 1em;
 }
+
+
+/* HOW IT WORKS */
+
+.hiwGrid {
+    height: 300px;
+    width: 100%;
+    padding: 60px 0px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 
 
 
