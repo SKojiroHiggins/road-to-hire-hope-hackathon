@@ -3,10 +3,9 @@ const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
 
-app.set('view engine', 'ejs'); // ejs is a template engine
+app.set('view engine', 'ejs'); // ejs is a template engine. allows access to html
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(express.static('public')); // render static files
-
 
 const profiles = [
     {
@@ -19,21 +18,15 @@ const profiles = [
     }
 ];
 
-
-
 // render html and css
 app.get('/', (req, res) => {
-    res.render('index');
+
+    res.render(path.join(__dirname + '/public/index.ejs'));
 });
 
 // main page
 app.get('/match', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/match.html'));
-});
-
-app.get('/temp', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/temp.html'));
-
+    res.render(path.join(__dirname + '/public/match.ejs'));
 });
 
 // sends all profile data
@@ -41,12 +34,12 @@ app.get('/profiles', (req, res) => {
     res.send(profiles);
 });
 
-app.post('/index', (req, res) => {
+app.post('/profile', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/profile.html'));
 });
 
 // creates a new profile
-app.post('/', (req, res) => {
+app.post('/match', (req, res) => {
     let userName = req.body.name;
     let userProfession = req.body.profession;
     
