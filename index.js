@@ -8,16 +8,6 @@ const fs = require("fs");
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(express.static('public')); // render static files
 
-const profiles = [
-    {
-        name: "John Doe",
-        profession: "Developer"
-    },
-    {
-        name: "Samantha Marsh",
-        profession: "Project Manager"
-    }
-];
 
 // render html and css
 app.get('/', (req, res) => {
@@ -42,19 +32,6 @@ app.post('/profile', (req, res) => {
 app.post('/match', (req, res) => {
     let userName = req.body.name;
     let userProfession = req.body.profession;
-    
-    // const profile = {
-    //     name: req.body.name,
-    //     profession: req.body.profession
-    // };
-    // profiles.push(profile);
-
-    // // res.send(profiles); test to return list of all profiles
-
-    // profiles.forEach((cur) => {
-    //     if (cur.profession === userProfession && cur.name !== userName)
-    //     console.log(cur);
-    // });
 
 
     const data = JSON.parse(fs.readFileSync('./public/profileData.json'));
