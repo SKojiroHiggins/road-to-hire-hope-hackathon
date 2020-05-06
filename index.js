@@ -29,23 +29,21 @@ app.post('/profile', (req, res) => {
 });
 
 // creates a new profile
-app.post('/match', (req, res) => {
-    
-    let userName = req.body.name;
-    let userProfession = req.body.profession;    
-    
+app.post('/match', (req, res) => {  
     profileData.push( {
-        name: userName,
-        profession: userProfession,
-        interests: {
-            interest1: "fake interest1",
-            interest2: "fake interest2"
-        }
+        FirstName: req.body.firstName, 
+        lastName: req.body.lastName,
+        type: "student",
+        looking: req.body.looking,
+        interest: req.body.interest,
+        distance: req.body.distance,
+        language: req.body.language
     });
+
 
     console.log(profileData);
 
-    res.sendFile(path.join(__dirname + '/public/match.html'));
+    res.sendFile(path.join(__dirname + '/public/maincontent.html'));
 });
 
 // match.html utilizes this to get profileData.json
