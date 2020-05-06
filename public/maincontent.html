@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="" alt="">
+        <nav>
+            <ul class="mixer-nav">
+                <li><a class="current" href="index.html">Home</a> </li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="heading">
+        <h1>Your Mentors</h1>
+    </div>
+
+    <section id="main-container">
+
+        <!-- <div class="sub-container">
+            <div class="members">
+                <img src="photos/mosh.jpg" alt="photo of mosh">
+                <div class="name">John Doe</div>
+                <div class="post">Software Engineer</div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, quisquam! In debitis quaerat eos
+                        culpa quibusdam molestiae porro, iusto qui ex commodi quo iste deserunt mollitia repellendus ab.
+                        Atque, cupiditate.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sub-container">
+            <div class="members">
+                <img src="photos/mosh.jpg" alt="photo of mosh">
+                <div class="name">John Doe</div>
+                <div class="post">Software Engineer</div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, eligendi. Labore distinctio eum
+                        iste corrupti ipsam veritatis voluptatum nemo. Incidunt voluptatum voluptatibus suscipit
+                        perspiciatis? Ipsa vel voluptatibus dolorem sit repudiandae.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sub-container">
+            <div class="members">
+                <img src="photos/mosh.jpg" alt="photo of mosh">
+                <div class="name">John Doe</div>
+                <div class="post">Software Engineer</div>
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempore quae fugiat, ullam
+                        fuga quas qui unde repellendus eum odit quos voluptate natus cupiditate obcaecati maxime
+                        debitis! Sed, architecto doloribus?</p>
+                </div>
+            </div>
+        </div> -->
+
+    </section>
+
+
+
+
+    <footer>
+        <section class="footerContainer">
+            <div class="contactUs">
+                <h3>CONTACT US</h3>
+                <ul>
+                    <li>704-333-3333</li>
+                    <li>contact@mentormixer.com</li>
+                </ul>
+            </div>
+            <div class="socialMedia">
+                <H3>STAY CONNECTED</H3>
+                <ul>
+                    <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa fa-facebook fa-lg"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.twitter.com/" aria-label="Twitter"><i class="fa fa-twitter fa-lg"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa fa-instagram fa-lg"
+                                aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="quickLinks">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>FAQs</li>
+                    <li>For Mentees</li>
+                    <li>For Mentors / Tutors</li>
+                </ul>
+            </div>
+
+        </section>
+        <div class="copyright">
+            <p>© MENTOR MIXER</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        const profileContainer = document.querySelector('#main-container');
+
+
+        // Creates HTML elements to render on page
+        const createNode = (element) => {
+            return document.createElement(element);
+        }
+
+        // Pins element to desired area
+        const append = (parent, child) => {
+            return parent.appendChild(child);
+        }
+
+        window.onload = fetchUser = () => {
+            fetch("/api/profiles")
+                .then((res) => {
+                    return res.json()
+                })
+                .then((data) => {
+                    return data.map((profileItem) => {
+
+                        // Need: mentor sorting
+
+
+
+                        let profileCard = createNode('div')
+                        let name = createNode('h3')
+                        let profession = createNode('h4')
+                        let type = createNode('p')
+                        let interest = createNode('p')
+                        let distance = createNode('p')
+                        let language = createNode('p')
+
+                        name.innerText = profileItem.firstName + ' ' + profileItem.lastName
+                        profession.innerText = profileItem.profession
+                        type.innerText = profileItem.type;
+                        interest.innerText = profileItem.interest;
+                        distance.innerText = profileItem.distance;
+                        language.innerText = profileItem.language;
+
+
+                        append(profileContainer, profileCard)
+                        append(profileCard, name)
+                        append(profileCard, profession)
+                        append(profileCard, type)
+                        append(profileCard, interest)
+                        append(profileCard, distance)
+                        append(profileCard, language)
+                    })
+                })
+                .catch((err) => {
+                    console.log(err);
+                })
+        }
+
+    </script>
+</body>
+
+</html>
