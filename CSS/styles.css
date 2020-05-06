@@ -398,13 +398,14 @@ span{
     float: right;
     
 }
-#submitBtn, #cancelBtn{
+#submitBtn, #cancelBtn, #photoBtn{
     border: none;
     border-radius: 40px;
     background:#41B3A3;
     color: #f9f9f9;
     padding: 10px 37px;
     margin: 50px 0 20px 20px;
+    width: 200px;
     font-size: 20px;
     text-decoration: none;
     font:"Montserrat",sans-serif;
@@ -412,7 +413,10 @@ span{
 .btn-submit:hover, .btn-cancel:hover{
     color: purple;
 }
-
+/*Upload Photo*/
+.uploadPhoto{
+    
+}
 
 
 
