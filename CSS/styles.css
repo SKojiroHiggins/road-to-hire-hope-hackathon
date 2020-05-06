@@ -39,6 +39,79 @@ nav li a{
 nav li a:hover{
     color:white;
 }
+/*************************Header Ends********************************/
+/***********************Main Content******************************/
+.main-container{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top:100px;
+    
+    
+  }
+  
+  .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    color:#444;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 20px solid #41B3A3;
+    width: 800px;
+    margin:auto;
+    line-height: 80px;
+  }
+  
+  .sub-container{
+      background-color: white;
+      width:auto;
+      border:1px solid black;
+    
+  }
+  
+  .members{
+    width: 400px;
+    margin: 10px;
+    padding:20px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+   max-width:100%;
+  }
+   
+  
+  .members:hover {
+    background: #ddd;
+  }
+  
+  .members img{
+      width: 100px;
+      height:100px;
+      border:1px solid #E1e0DE;
+      border-radius: 50%;
+      }
+  
+      .name{
+        padding:20px;
+        color:#8A3E07;
+        font-size:14px;
+        text-transform: uppercase;
+      }
+  
+  .post{
+        font-style: italic;
+        color:#999;
+      }
+  .desc {margin:20px 0;
+             text-align: justify;
+            font-weight: lighter;
+             line-height:25px;
+            columns: #4e4e4e;}
+  /**************************Main Content Ends*****************************/
 
 #hero-main{
     background: url(/photos/heromentor.jpg) no-repeat center center/cover;
