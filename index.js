@@ -30,14 +30,11 @@ app.post('/profile', (req, res) => {
 
 // creates a new profile
 app.post('/match', (req, res) => {
+    
     let userName = req.body.name;
-    let userProfession = req.body.profession;
-
-
-    const data = JSON.parse(fs.readFileSync('./public/profileData.json'));
+    let userProfession = req.body.profession;    
     
-    
-    data.push( {
+    profileData.push( {
         name: userName,
         profession: userProfession,
         interests: {
@@ -46,12 +43,7 @@ app.post('/match', (req, res) => {
         }
     });
 
-    // fs.writeFileSync('./public/profileData.json', JSON.stringify(data));
-
-
-
-    console.log(data);
-
+    console.log(profileData);
 
     res.sendFile(path.join(__dirname + '/public/match.html'));
 });
