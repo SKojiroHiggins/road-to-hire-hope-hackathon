@@ -47,18 +47,53 @@ nav li a:hover{
 /*************************Header Ends********************************/
 
 /***********************Main Content******************************/
-.main-container{
+#main-container{
     background-color: white;
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding-left: 250px;
     padding-right: 250px;
     padding-top:100px;
-    
-    
+}
+
+#main-container div {
+    background-color: white;
+    width:auto;
+    border:1px solid black;
+    width: 400px;
+    margin: 10px;
+    padding:20px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+   max-width:100%;
+}  
+
+#main-container h3{
+    padding:20px;
+    color:#8A3E07;
+    font-size:14px;
+    text-transform: uppercase;
   }
+<<<<<<< HEAD:CSS/styles.css
   
   
+=======
+#main-container h4{
+    font-style: italic;
+    color:#999;
+}
+
+#main-container p {
+    margin:20px 0;
+    text-align: justify;
+    font-weight: lighter;
+    line-height:25px;
+    columns: #4e4e4e;
+}
+
+>>>>>>> origin/dev:public/CSS/styles.css
   .heading{
     display: flex;
     justify-content: center;
@@ -73,22 +108,9 @@ nav li a:hover{
     line-height: 80px;
   }
   
-  .sub-container{
-      background-color: white;
-      width:auto;
-      border:1px solid black;
-    
-  }
   
-  .members{
-    width: 400px;
-    margin: 10px;
-    padding:20px;
-    text-align: center;
-    box-sizing: border-box;
-    cursor: pointer;
-   max-width:100%;
-  }
+  
+ 
    
   
   .members:hover {
@@ -102,22 +124,10 @@ nav li a:hover{
       border-radius: 50%;
       }
   
-      .name{
-        padding:20px;
-        color:#8A3E07;
-        font-size:14px;
-        text-transform: uppercase;
-      }
+      
   
-  .post{
-        font-style: italic;
-        color:#999;
-      }
-  .desc {margin:20px 0;
-             text-align: justify;
-            font-weight: lighter;
-             line-height:25px;
-            columns: #4e4e4e;}
+  
+
   /**************************Main Content Ends*****************************/
 
 
