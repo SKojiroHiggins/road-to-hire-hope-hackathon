@@ -11,15 +11,30 @@
 /*************Header****/
 header{
     background-color: #41B3A3;
+    padding:30px 2%;
+   
+    
+}
+.logoitem{
+    justify-self: flex-end;
+}
+
+nav{
+    padding-left: ;
+    background-color: #41B3A3;
     display:flex;
     justify-content: center;
     align-items: center ;
     padding:30px 10%;
+   
+
 }
 
+
 .logo{
-    float: left;
-    height:100px;
+   float: left;
+   height:100px;
+ 
 }
 
 li a{
@@ -45,7 +60,10 @@ nav li a:hover{
     color:white;
 }
 /*************************Header Ends********************************/
+<<<<<<< HEAD
+=======
 
+>>>>>>> e86be40a666fbb77feb07f21456f40a8d69634d3
 /***********************Main Content******************************/
 #main-container{
     background-color: white;
@@ -155,7 +173,7 @@ nav li a:hover{
     border: none;
     border-radius: 40px;
     background:#41B3A3;
-    color: #f9f9f9;
+    color: white;
     padding: 10px 37px;
     margin: 10px 0 20px 60px;
     font-size: 20px;
@@ -163,6 +181,14 @@ nav li a:hover{
   
 }
 
+.sign-up a{
+    transition: all 0.3s ease 0s;
+    color:black;
+}
+
+.sign-up a:hover{
+    color: white;
+}
 .sign-up-bottom{
     display: flex;
     justify-content: center;
@@ -399,13 +425,14 @@ span{
     float: right;
     
 }
-#submitBtn, #cancelBtn{
+#submitBtn, #cancelBtn, #photoBtn{
     border: none;
     border-radius: 40px;
     background:#41B3A3;
     color: #f9f9f9;
     padding: 10px 37px;
     margin: 50px 0 20px 20px;
+    width: 200px;
     font-size: 20px;
     text-decoration: none;
     font:"Montserrat",sans-serif;
@@ -413,7 +440,10 @@ span{
 .btn-submit:hover, .btn-cancel:hover{
     color: purple;
 }
-
+/*Upload Photo*/
+.uploadPhoto{
+    
+}
 
 
 
