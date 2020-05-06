@@ -20,6 +20,7 @@ header{
 }
 
 nav{
+    
     background-color: #41B3A3;
     display:flex;
     justify-content: center;
@@ -433,6 +434,11 @@ span{
     color: purple;
 }
 
+#submitBtn a{
+    text-decoration: none;
+    color:white;
+}
+/*Upload Photo*/
 
 
 
@@ -507,6 +513,7 @@ span{
             font-weight: lighter;
              line-height:25px;
             columns: #4e4e4e;}
+
   /**************************Main Content Ends*****************************/
 
 
@@ -620,6 +627,11 @@ textarea {
 #map {
     max-height: 300px;
     width: 100%;
+}
+
+#submitBtn{
+    text-decoration: none;
+    color:white;
 }
 
 
