@@ -45,7 +45,7 @@ nav li a:hover{
     color:white;
 }
 /*************************Header Ends********************************/
-<<<<<<< HEAD
+
 /***********************Main Content******************************/
 .main-container{
     background-color: white;
@@ -119,9 +119,7 @@ nav li a:hover{
              line-height:25px;
             columns: #4e4e4e;}
   /**************************Main Content Ends*****************************/
-=======
 
->>>>>>> bcfcb3b883dad01c619900fcb5e81e738f513418
 
 #hero-main{
     background: url(/photos/heromentor.jpg) no-repeat center center/cover;
@@ -281,29 +279,12 @@ span{
     /* background-color: #41b3a3; */
 }
 
-#mentor-1 img {
-    width: 100px;
-    height:100px;
+ .mentor-img { 
+    width: 10vw;
+    height: 15vh;
     border:1px solid #E1e0DE;
     border-radius: 50%;
-}
-#mentor-2 img {
-    width: 100px;
-    height:100px;
-    border:1px solid #E1e0DE;
-    border-radius: 50%;
-}
-#mentor-3 img {
-    width: 100px;
-    height:100px;
-    border:1px solid #E1e0DE;
-    border-radius: 50%;
-}
-#mentor-4 img {
-    width: 100px;
-    height:100px;
-    border:1px solid #E1e0DE;
-    border-radius: 50%;
+    margin-top: 20px;
 }
 
 /*****************SIGN UP PAGE ***************/
@@ -578,7 +559,7 @@ input[type=submit] {
 
 .contactInfo {
     margin-top: 20px;
-    margin-right: 100px;
+    margin-right: 70px;
     text-align: center;
 }
 
@@ -591,6 +572,11 @@ input[type=submit] {
     list-style: none;
     margin: 35px;
     
+}
+
+#map {
+    max-height: 300px;
+    width: 100%;
 }
 
 
