@@ -17,6 +17,11 @@ header{
     padding:30px 10%;
 }
 
+.logo{
+    float: left;
+    height:100px;
+}
+
 li a{
     text-decoration: none;
     font:"Montserrat",sans-serif;
@@ -51,6 +56,7 @@ nav li a:hover{
     
     
   }
+  
   
   .heading{
     display: flex;
@@ -115,7 +121,7 @@ nav li a:hover{
 
 #hero-main{
     background: url(/photos/heromentor.jpg) no-repeat center center/cover;
-    height:400px;
+    height:700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,6 +149,30 @@ nav li a:hover{
     font-size: 20px;
     
   
+}
+
+.sign-up-bottom{
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 40px;
+    background:#41B3A3;
+    color: #f9f9f9;
+    padding: 10px 37px;
+    margin: 10px 0 20px 60px;
+    font-size: 20px;
+    
+
+}
+.signupbottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.sign-up-bottom a{
+    text-decoration: none;
 }
 
 .sign-up a{text-decoration: none;
