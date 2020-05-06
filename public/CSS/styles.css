@@ -20,7 +20,7 @@ header{
 }
 
 nav{
-    padding-left: ;
+    
     background-color: #41B3A3;
     display:flex;
     justify-content: center;
@@ -144,7 +144,7 @@ nav li a:hover{
 
 
 #hero-main{
-    background: url(/photos/heromentor.jpg) no-repeat center center/cover;
+    background: url(/public/photos/heromentor.jpg) no-repeat center center/cover;
     height:700px;
     display: flex;
     justify-content: center;
@@ -434,10 +434,12 @@ span{
 .btn-submit:hover, .btn-cancel:hover{
     color: purple;
 }
-/*Upload Photo*/
-.uploadPhoto{
-    
+
+#submitBtn a{
+    text-decoration: none;
+    color:white;
 }
+/*Upload Photo*/
 
 
 
@@ -533,6 +535,14 @@ span{
     padding: 15px;
 }
 
+.suHero{
+    text-align: center;
+    
+}
+
+.suHero h2{
+    font-size:60px;
+}
 
 .heroContainer {
     text-align: center;
