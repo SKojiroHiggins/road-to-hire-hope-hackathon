@@ -45,6 +45,7 @@ nav li a:hover{
     color:white;
 }
 /*************************Header Ends********************************/
+<<<<<<< HEAD
 /***********************Main Content******************************/
 .main-container{
     background-color: white;
@@ -118,6 +119,9 @@ nav li a:hover{
              line-height:25px;
             columns: #4e4e4e;}
   /**************************Main Content Ends*****************************/
+=======
+
+>>>>>>> bcfcb3b883dad01c619900fcb5e81e738f513418
 
 #hero-main{
     background: url(/photos/heromentor.jpg) no-repeat center center/cover;
@@ -209,7 +213,7 @@ nav li a:hover{
     height: 300px;
     display: flex;
     justify-content: space-evenly;
-    /* padding-top: 75px; */
+    padding-top: 75px;
 }
 
 .card-1, .card-2, .card-3{
@@ -218,6 +222,7 @@ nav li a:hover{
     margin: 5px;
     text-align: center;
     border-radius: 1em;
+    width: 300px;
 }
 
 /* HOW IT WORKS */
@@ -248,6 +253,7 @@ nav li a:hover{
     font-size: 50px;
     height: 80px;
 }
+
 .mentors{
     height: 300px;
     display: flex;
@@ -259,6 +265,12 @@ nav li a:hover{
     font-size: 20px;
     text-decoration: none;
 }
+
+span{
+    text-decoration: underline;
+    font-size: 25px;
+}
+
 #mentor-1, #mentor-2, #mentor-3, #mentor-4{
     text-align: center;
     /* border: 1px solid #f9f9f9; */
@@ -266,7 +278,7 @@ nav li a:hover{
     margin: 15px;
     height: 260px;
     width: 25%;
-    background-color: #41b3a3;
+    /* background-color: #41b3a3; */
 }
 
 #mentor-1 img {
@@ -294,14 +306,196 @@ nav li a:hover{
     border-radius: 50%;
 }
 
+/*****************SIGN UP PAGE ***************/
+/* .signUpTitle{
+    text-align: center;
+    padding-top: 25px;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #41b3a3;
+    background-color: rgb(230, 224, 224);
+    font-size: 50px;
+    height: 80px;
+
+} */
+
+.signUp{
+    background-color: #e8a87c;
+    height: 1000px;
+    width: 90%;
+    margin: 30px 50px;
+    /* border-radius: 40px; */
+
+}
+
+.signUp fieldset {
+    border: none;
+}
+
+.signUp legend {
+    /* margin-bottom: 10px; */
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.signUp label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.signUp li {
+    list-style: none;
+    margin: 35px;
+    
+}
+
+.signUp input[type=text] {
+    padding: 5px 10px;
+    margin: 10px;
+    display: block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: medium;
+}
+
+/* .firstName, .choice, .distance{
+    padding: 50px 20px ;
+    border: none;
+    border-radius: 40px;
+    width: 400px;
+    background:#41B3A3;
+    color: #f9f9f9;
+    margin: 30px 0px 20px 30px;
+    height: 5px;
+    font-size: 20px;
+    text-align: center;
+    font:"Montserrat",sans-serif;
+}
+.lastName, .career, .language{
+    padding: 50px 20px;
+    border: none;
+    border-radius: 40px;
+    width: 400px;
+    color:#41B3A3;
+    background: #f9f9f9;
+    margin: 40px 30px;
+    height: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    font:"Montserrat",sans-serif;
+
+} */
+
 .featured-img {
  position: relative;
+}
+
+/*Buttons*/
+.buttons{
+    display:flex;
+    justify-content: center;
+    float: right;
+    
+}
+#submitBtn, #cancelBtn{
+    border: none;
+    border-radius: 40px;
+    background:#41B3A3;
+    color: #f9f9f9;
+    padding: 10px 37px;
+    margin: 50px 0 20px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font:"Montserrat",sans-serif;
+}
+.btn-submit:hover, .btn-cancel:hover{
+    color: purple;
 }
 
 
 
 
-/* CONTACT FORM */
+/***********************Main Content PAGE******************************/
+.main-container{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top:100px;
+    
+    
+  }
+  
+  .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    color:#444;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 20px solid #41B3A3;
+    width: 800px;
+    margin:auto;
+    line-height: 80px;
+  }
+  
+  .sub-container{
+      background-color: white;
+      width:auto;
+      border:1px solid black;
+    
+  }
+  
+  .members{
+    width: 400px;
+    margin: 10px;
+    padding:20px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+   max-width:100%;
+  }
+   
+  
+  .members:hover {
+    background: #ddd;
+  }
+  
+  .members img{
+      width: 100px;
+      height:100px;
+      border:1px solid #E1e0DE;
+      border-radius: 50%;
+      }
+  
+      .name{
+        padding:20px;
+        color:#8A3E07;
+        font-size:14px;
+        text-transform: uppercase;
+      }
+  
+  .post{
+        font-style: italic;
+        color:#999;
+      }
+  .desc {margin:20px 0;
+             text-align: justify;
+            font-weight: lighter;
+             line-height:25px;
+            columns: #4e4e4e;}
+  /**************************Main Content Ends*****************************/
+
+
+
+
+
+
+
+/****************** CONTACT FORM PAGE ************/
 
 .contactGrid {
     display: grid;
@@ -314,21 +508,50 @@ nav li a:hover{
     padding: 15px;
 }
 
+
+.heroContainer {
+    text-align: center;
+    margin: 30px;
+}
+
+.heroContainer h2 {
+    font-size: 60px;
+}
+
+.heroContainer h3 {
+    font-size: 25px;
+}
+
 .contactForm li {
     list-style: none;
-    margin: 15px 15px;
+    margin: 30px 15px;
+}
+
+label {
+    line-height: 30px;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.selectCss {
+    width: 25%;
+    padding: 20px;
+    font-size: 15px;
+
+}
+
+#comments {
+    display: block;
 }
 
 input[type=text], textarea {
     padding: 5px 10px;
-    /* margin: 8px 8px; */
+    /* margin: 10px; */
     display: inline-block;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: medium;
-    box-shadow: none;
-    outline: none;
-  }
+}
 
 textarea {
     width: 80%;
@@ -347,8 +570,24 @@ input[type=submit] {
     cursor: pointer;
     text-align: center;
     
-  }
+}
 
+.contactInfo {
+    margin-top: 20px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.contactInfo h3 {
+    font-size: 40;
+    
+}
+
+.contactInfo li {
+    list-style: none;
+    margin: 35px;
+    
+}
 
 
 /* --------FOOTER -----------
@@ -400,79 +639,4 @@ input[type=submit] {
 .copyright p {
     text-align: center;
 }
-
-/*SIGN UP*/
-.signUpTitle{
-    text-align: center;
-    padding-top: 25px;
-    color: black;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #41b3a3;
-    background-color: rgb(230, 224, 224);
-    font-size: 50px;
-    height: 80px;
-
-}
-
-.signUp{
-    background-color: #e8a87c;
-    height: 1000px;
-    width: 90%;
-    margin: 30px 50px;
-    border-radius: 40px;
-
-}
-
-.firstName, .choice, .distance{
-    padding: 50px 20px ;
-    border: none;
-    border-radius: 40px;
-    width: 400px;
-    background:#41B3A3;
-    color: #f9f9f9;
-    margin: 30px 0px 20px 30px;
-    height: 5px;
-    font-size: 20px;
-    text-align: center;
-    font:"Montserrat",sans-serif;
-}
-.lastName, .career, .language{
-    padding: 50px 20px;
-    border: none;
-    border-radius: 40px;
-    width: 400px;
-    color:#41B3A3;
-    background: #f9f9f9;
-    margin: 40px 30px;
-    height: 5px;
-    font-size: 20px;
-    text-decoration: none;
-    text-align: center;
-    font:"Montserrat",sans-serif;
-
-}
-
-
-/*Buttons*/
-.buttons{
-    display:flex;
-    justify-content: center;
-    float: right;
-    
-}
-#submitBtn, #cancelBtn{
-    border: none;
-    border-radius: 40px;
-    background:#41B3A3;
-    color: #f9f9f9;
-    padding: 10px 37px;
-    margin: 50px 0 20px 20px;
-    font-size: 20px;
-    text-decoration: none;
-    font:"Montserrat",sans-serif;
-}
-.btn-submit:hover, .btn-cancel:hover{
-    color: purple;
-}
-
 

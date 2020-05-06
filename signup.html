@@ -20,8 +20,72 @@
 </header>
 
 <body>
-    <legend class="signUpTitle">Sign Up!</legend>
-        <form class="signUp">                
+    <div class="suHero">
+        <h2>Create a new profile!</h2>
+    </div>
+    <div class="suFormcontainer">
+        <form class="signUp" method="POST">   
+            <fieldset>        
+                <legend>Student Info</legend>    
+            <ul>
+                <li>
+            <label>Your Name</label>
+            <input type="text" id="firstName" placeholder="First Name" required>
+       
+    
+            <!-- <label>Last Name</label> -->
+            <input type="text" id="lastName" placeholder="Last Name" required>
+                </li>
+                <li>
+                    <label>Email</label>
+                    <input type="text" id="email" placeholder="Email" required>
+                </li>
+            <li>
+            <label>What Are You Looking For?</label>
+            <input type="radio" name="distance" value="10"> Mentor
+            <input type="radio" name="distance" value="20"> Tutor
+            <input type="radio" name="distance" value="50"> Both
+        </li>
+        <li>
+            <label>Career Interest</label>
+            <select id="careerList" class="selectCss">
+                <option value="1">STEM</option>
+                <option value="3">Healthcare</option>
+                <option value="2">Arts</option>
+                <option value="3">Finance</option>
+                <option value="4">Law</option>
+            </select>
+        </li>
+    </fieldset> 
+    <fieldset>
+        <legend>Additional Info</legend>    
+        <li>
+            <label>Mile Radius:</label>
+            <input type="radio" name="distance" value="10"> Less Than 10 miles
+            <input type="radio" name="distance" value="20"> Less Than 20 miles
+            <input type="radio" name="distance" value="50"> Less Than 50 miles
+        </li>
+        <li>
+            <label>Preferred Language</label>
+            <select id="languageList" class="selectCss">
+                <option value="1">English</option>
+                <option value="1">Spanish</option>
+                <option value="2">French</option>
+                <option value="1">Mandarian</option>
+                <option value="3">Portuguese</option>
+                <option value="4">Japanese</option>
+                <option value="1">Russian</option>
+            </select>
+        </li>
+        <article class="buttons">
+        <input id="submitBtn" type="submit" value="Create Profile">
+        <input id="cancelBtn" type="submit" value="Cancel">
+        </article>
+            </ul>
+        </fieldset>
+        </form>
+    </div>
+        <!-- <form class="signUp">                
                 <div class="firstName">
                     <label>First Name</label>
                     <input type="text" id="firstName" value="firstName" />
@@ -40,8 +104,9 @@
                 <div class="career">
                     <label>Career Interest</label>
                     <select id="careerList">
-                        <option value="1">Tech</option>
-                        <option value="2">Science</option>
+                        <option value="1">STEM</option>
+                        <option value="3">Healthcare</option>
+                        <option value="2">Arts</option>
                         <option value="3">Finance</option>
                         <option value="4">Law</option>
                     </select>
@@ -56,17 +121,26 @@
                 <div class="language">
                     <label>Preferred Language</label>
                     <select id="languageList">
+                        <option value="1">English</option>
                         <option value="1">Spanish</option>
                         <option value="2">French</option>
+                        <option value="1">Mandarian</option>
                         <option value="3">Portuguese</option>
                         <option value="4">Japanese</option>
+                        <option value="1">Russian</option>
                     </select>
                 </div>
                 <article class="buttons">
                 <input id="submitBtn" type="submit" value="Submit now">
                 <input id="cancelBtn" type="submit" value="Cancel now">
                 </article>
+        </form> -->
         </form>
+        <article>
+            <div class="photo">
+                <div class="imgIcon"><img src="./photos/Photos2/ImagePlaceholder.png" alt="image placeholder"></a></div>
+            </div>
+        </article>
     <footer>
         <section class="footerContainer">
             <div class="contactUs">
