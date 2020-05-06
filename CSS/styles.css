@@ -40,7 +40,238 @@ nav li a:hover{
     color:white;
 }
 /*************************Header Ends********************************/
-/***********************Main Content******************************/
+
+
+#hero-main{
+    background: url(/photos/heromentor.jpg) no-repeat center center/cover;
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.sign-up{ 
+    border: none;
+    border-radius: 40px;
+    background:#41B3A3;
+    color: #f9f9f9;
+    padding: 10px 37px;
+    margin: 10px 0 20px 60px;
+    font-size: 20px;
+    
+  
+}
+
+.sign-up a{text-decoration: none;
+
+}
+
+.sign-up:hover{
+    color:white;
+}
+
+
+
+/* --------BODY-----------
+-----------------------------
+----------------------------- */
+
+
+
+/* Info Cards */
+/*Info Card Title: What We Do*/
+#whatWeDo{
+    text-align: center;
+    padding-top: 20px;
+    color: #41B3A3;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    background-color: #e8a876;
+    font-size: 50px;
+    height: 80px;
+    /* margin-top: 20px;
+    margin-bottom: 10px; */
+}
+.infoCards{
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 75px;
+}
+
+.card-1, .card-2, .card-3{
+    border: 3px dashed #41b3a3;
+    background-color: rgb(230, 224, 224);
+    margin: 5px;
+    text-align: center;
+    border-radius: 1em;
+}
+
+/* HOW IT WORKS */
+
+.hiwGrid {
+    height: 300px;
+    width: 100%;
+    padding: 60px 0px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr 1fr);
+}
+
+
+/* Featured Mentors */
+/*Title*/
+.featMentors{
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 250px 0;
+    border: 2px solid black;
+    border-radius: 100px;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #41b3a3;
+    background-color: rgb(230, 224, 224);
+    font-size: 50px;
+    height: 80px;
+}
+.mentors{
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+    border-radius: 40px;
+    background:#41B3A3;
+    color: #f9f9f9;
+    font-size: 20px;
+    text-decoration: none;
+}
+#mentor-1, #mentor-2, #mentor-3, #mentor-4{
+    text-align: center;
+    /* border: 1px solid #f9f9f9; */
+    border-radius: 20px;
+    margin: 15px;
+    height: 260px;
+    width: 25%;
+    background-color: #41b3a3;
+}
+
+
+/*****************SIGN UP PAGE ***************/
+/* .signUpTitle{
+    text-align: center;
+    padding-top: 25px;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #41b3a3;
+    background-color: rgb(230, 224, 224);
+    font-size: 50px;
+    height: 80px;
+
+} */
+
+.signUp{
+    background-color: #e8a87c;
+    height: 1000px;
+    width: 90%;
+    margin: 30px 50px;
+    /* border-radius: 40px; */
+
+}
+
+.signUp fieldset {
+    border: none;
+}
+
+.signUp legend {
+    /* margin-bottom: 10px; */
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.signUp label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.signUp li {
+    list-style: none;
+    margin: 35px;
+    
+}
+
+.signUp input[type=text] {
+    padding: 5px 10px;
+    margin: 10px;
+    display: block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: medium;
+}
+
+/* .firstName, .choice, .distance{
+    padding: 50px 20px ;
+    border: none;
+    border-radius: 40px;
+    width: 400px;
+    background:#41B3A3;
+    color: #f9f9f9;
+    margin: 30px 0px 20px 30px;
+    height: 5px;
+    font-size: 20px;
+    text-align: center;
+    font:"Montserrat",sans-serif;
+}
+.lastName, .career, .language{
+    padding: 50px 20px;
+    border: none;
+    border-radius: 40px;
+    width: 400px;
+    color:#41B3A3;
+    background: #f9f9f9;
+    margin: 40px 30px;
+    height: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    font:"Montserrat",sans-serif;
+
+} */
+
+
+/*Buttons*/
+.buttons{
+    display:flex;
+    justify-content: center;
+    float: right;
+    
+}
+#submitBtn, #cancelBtn{
+    border: none;
+    border-radius: 40px;
+    background:#41B3A3;
+    color: #f9f9f9;
+    padding: 10px 37px;
+    margin: 50px 0 20px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font:"Montserrat",sans-serif;
+}
+.btn-submit:hover, .btn-cancel:hover{
+    color: purple;
+}
+
+
+
+
+/***********************Main Content PAGE******************************/
 .main-container{
     background-color: white;
     display:flex;
@@ -113,137 +344,13 @@ nav li a:hover{
             columns: #4e4e4e;}
   /**************************Main Content Ends*****************************/
 
-#hero-main{
-    background: url(/photos/heromentor.jpg) no-repeat center center/cover;
-    height:400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-.sign-up{ 
-    border: none;
-    border-radius: 40px;
-    background:#41B3A3;
-    color: #f9f9f9;
-    padding: 10px 37px;
-    margin: 10px 0 20px 60px;
-    font-size: 20px;
-    
-  
-}
-
-.sign-up a{text-decoration: none;
-
-}
-
-.sign-up:hover{
-    color:white;
-}
-
-
-
-/* --------BODY-----------
------------------------------
------------------------------ */
-
-
-
-/* Info Cards */
-/*Info Card Title: What We Do*/
-#whatWeDo{
-    text-align: center;
-    padding-top: 20px;
-    color: #41B3A3;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: black;
-    background-color: #e8a876;
-    font-size: 50px;
-    height: 80px;
-    /* margin-top: 20px;
-    margin-bottom: 10px; */
-}
-.infoCards{
-    height: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    /* padding-top: 75px; */
-}
-
-.card-1, .card-2, .card-3{
-    border: 3px dashed #41b3a3;
-    background-color: rgb(230, 224, 224);
-    margin: 5px;
-    text-align: center;
-    border-radius: 1em;
-}
-
-/* HOW IT WORKS */
-
-.hiwGrid {
-    height: 300px;
-    width: 100%;
-    padding: 60px 0px;
-    margin: auto;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(1, 2fr 1fr);
-}
-
-
-/* Featured Mentors */
-/*Title*/
-.featMentors{
-    text-align: center;
-    padding-top: 20px;
-    margin: 0 250px 0;
-    border: 2px solid black;
-    border-radius: 100px;
-    color: black;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #41b3a3;
-    background-color: rgb(230, 224, 224);
-    font-size: 50px;
-    height: 80px;
-}
-.mentors{
-    height: 300px;
-    display: flex;
-    justify-content: flex-start;
-    margin: 20px;
-    border-radius: 40px;
-    background:#41B3A3;
-    color: #f9f9f9;
-    font-size: 20px;
-    text-decoration: none;
-}
-#mentor-1, #mentor-2, #mentor-3, #mentor-4{
-    text-align: center;
-    /* border: 1px solid #f9f9f9; */
-    border-radius: 20px;
-    margin: 15px;
-    height: 260px;
-    width: 25%;
-    background-color: #41b3a3;
-}
 
 
 
 
 
 
-
-
-
-
-/* CONTACT FORM */
+/****************** CONTACT FORM PAGE ************/
 
 .contactGrid {
     display: grid;
@@ -256,21 +363,50 @@ nav li a:hover{
     padding: 15px;
 }
 
+
+.heroContainer {
+    text-align: center;
+    margin: 30px;
+}
+
+.heroContainer h2 {
+    font-size: 60px;
+}
+
+.heroContainer h3 {
+    font-size: 25px;
+}
+
 .contactForm li {
     list-style: none;
-    margin: 15px 15px;
+    margin: 30px 15px;
+}
+
+label {
+    line-height: 30px;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.selectCss {
+    width: 25%;
+    padding: 20px;
+    font-size: 15px;
+
+}
+
+#comments {
+    display: block;
 }
 
 input[type=text], textarea {
     padding: 5px 10px;
-    /* margin: 8px 8px; */
+    /* margin: 10px; */
     display: inline-block;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: medium;
-    box-shadow: none;
-    outline: none;
-  }
+}
 
 textarea {
     width: 80%;
@@ -289,8 +425,24 @@ input[type=submit] {
     cursor: pointer;
     text-align: center;
     
-  }
+}
 
+.contactInfo {
+    margin-top: 20px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.contactInfo h3 {
+    font-size: 40;
+    
+}
+
+.contactInfo li {
+    list-style: none;
+    margin: 35px;
+    
+}
 
 
 /* --------FOOTER -----------
@@ -342,79 +494,4 @@ input[type=submit] {
 .copyright p {
     text-align: center;
 }
-
-/*SIGN UP*/
-.signUpTitle{
-    text-align: center;
-    padding-top: 25px;
-    color: black;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #41b3a3;
-    background-color: rgb(230, 224, 224);
-    font-size: 50px;
-    height: 80px;
-
-}
-
-.signUp{
-    background-color: #e8a87c;
-    height: 1000px;
-    width: 90%;
-    margin: 30px 50px;
-    border-radius: 40px;
-
-}
-
-.firstName, .choice, .distance{
-    padding: 50px 20px ;
-    border: none;
-    border-radius: 40px;
-    width: 400px;
-    background:#41B3A3;
-    color: #f9f9f9;
-    margin: 30px 0px 20px 30px;
-    height: 5px;
-    font-size: 20px;
-    text-align: center;
-    font:"Montserrat",sans-serif;
-}
-.lastName, .career, .language{
-    padding: 50px 20px;
-    border: none;
-    border-radius: 40px;
-    width: 400px;
-    color:#41B3A3;
-    background: #f9f9f9;
-    margin: 40px 30px;
-    height: 5px;
-    font-size: 20px;
-    text-decoration: none;
-    text-align: center;
-    font:"Montserrat",sans-serif;
-
-}
-
-
-/*Buttons*/
-.buttons{
-    display:flex;
-    justify-content: center;
-    float: right;
-    
-}
-#submitBtn, #cancelBtn{
-    border: none;
-    border-radius: 40px;
-    background:#41B3A3;
-    color: #f9f9f9;
-    padding: 10px 37px;
-    margin: 50px 0 20px 20px;
-    font-size: 20px;
-    text-decoration: none;
-    font:"Montserrat",sans-serif;
-}
-.btn-submit:hover, .btn-cancel:hover{
-    color: purple;
-}
-
 

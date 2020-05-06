@@ -20,8 +20,9 @@
    </header>
     
    <section class="contactContainer">
-        <div class="contactHero">
-            <h3>CONTACT US</h3>
+        <div class="heroContainer">
+            <h2>CONTACT US</h2>
+            <h3>We're here to help!</h3>
         </div>
         <div class="contactGrid">
             <div class="formContainer">
@@ -43,18 +44,17 @@
                     </label>
         
                     <label for="subject">Subject</label>
-                    <select id="subject" name="subject">
-                        <option value="productInquiry">Product Inquiry</option>
-                        <option value="orderTracking">Order Tracking</option>
-                        <option value="orderDetails">Order Details</option>
-                        <option value="returnsExchanges">Returns/Exchanges</option>
+                    <select id="subject" name="subject" class="selectCss">
+                        <option value="mentor">Mentor</option>
+                        <option value="tutor">Tutor</option>
+                        <option value="student">Student</option>
+                        <option value="other">Other</option>
                       </select>
                     </li>
         
                     <li>
-                    <label for='comments'>Comments (2000 Character Limit)
-                        <textarea id='comments' style="height:80px;" placeholder="Any Questions?" maxlength="2000" required></textarea>
-                    </label>
+                    <label for='comments'>How can we help?</label>
+                        <textarea id='comments' style="height:80px;" placeholder="(2000 Character Limit)" maxlength="2000" required></textarea>
                     </li>
         
                     <li>
@@ -65,7 +65,11 @@
                 </form>
             </div>
             <div class="contactInfo">
-
+                <h3>Something more urgent?</h3>
+                <ul>
+                    <li>704-333-3333</li>
+                    <li>contact@mentormixer.com</li>
+                </ul>
             </div>
         </div>
    </section>
