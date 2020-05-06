@@ -433,18 +433,10 @@ span{
     text-decoration: none;
     font:"Montserrat",sans-serif;
 }
-.btn-submit:hover, .btn-cancel:hover{
+/* .btn-submit:hover, .btn-cancel:hover{
     color: purple;
-}
+} */
 
-<<<<<<< HEAD
-#submitBtn a{
-    text-decoration: none;
-    color:white;
-}
-/*Upload Photo*/
-=======
->>>>>>> 80ec660ecec647e8a05fd4b7e593c52837d26e02
 
 
 
