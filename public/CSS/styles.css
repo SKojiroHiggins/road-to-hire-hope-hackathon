@@ -20,10 +20,6 @@ header{
 }
 
 nav{
-<<<<<<< HEAD
-    
-=======
->>>>>>> 80ec660ecec647e8a05fd4b7e593c52837d26e02
     background-color: #41B3A3;
     display:flex;
     justify-content: center;
@@ -437,14 +433,11 @@ span{
     color: purple;
 }
 
-<<<<<<< HEAD
 #submitBtn a{
     text-decoration: none;
     color:white;
 }
 /*Upload Photo*/
-=======
->>>>>>> 80ec660ecec647e8a05fd4b7e593c52837d26e02
 
 
 
