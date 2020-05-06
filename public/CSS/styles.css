@@ -20,10 +20,7 @@ header{
 }
 
 nav{
-<<<<<<< HEAD
     
-=======
->>>>>>> 80ec660ecec647e8a05fd4b7e593c52837d26e02
     background-color: #41B3A3;
     display:flex;
     justify-content: center;
@@ -335,14 +332,23 @@ span{
     display: grid;
     grid-template-columns: repeat(1, 2fr 1fr);
     padding: 20px;
-    background-color: #e8a87c;
+    /* background-color: #e8a87c; */
     /* width: 90%; */
 }
 
 .suFormcontainer {
     padding-left: 150px;
 }
-
+.suHero{
+    text-align: center;
+    padding-top: 20px;
+    color: #41B3A3;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    background-color: #e27d60;
+    font-size: 50px;
+    height: 80px;
+}
 .signUp{
     height: 750px;
     
@@ -437,6 +443,11 @@ span{
     color: purple;
 } */
 
+#submitBtn a{
+    text-decoration: none;
+    color:white;
+}
+/*Upload Photo*/
 
 
 
@@ -511,6 +522,7 @@ span{
             font-weight: lighter;
              line-height:25px;
             columns: #4e4e4e;}
+
   /**************************Main Content Ends*****************************/
 
 
@@ -624,6 +636,11 @@ textarea {
 #map {
     max-height: 300px;
     width: 100%;
+}
+
+#submitBtn{
+    text-decoration: none;
+    color:white;
 }
 
 
