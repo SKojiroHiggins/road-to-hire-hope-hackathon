@@ -59,7 +59,6 @@ nav li a:hover{
     color:white;
 }
 /*************************Header Ends********************************/
-
 /***********************Main Content******************************/
 #main-container{
     background-color: white;
@@ -143,7 +142,7 @@ nav li a:hover{
 
 
 #hero-main{
-    background: url(/photos/heromentor.jpg) no-repeat center center/cover;
+    background: url(/public/photos/heromentor.jpg) no-repeat center center/cover;
     height:700px;
     display: flex;
     justify-content: center;
@@ -436,6 +435,7 @@ span{
 
 
 
+
 /***********************Main Content PAGE******************************/
 .main-container{
     background-color: white;
@@ -578,19 +578,18 @@ textarea {
     width: 80%;
 }
 
-input[type=submit] {
-    width: 50%;
-    background-color: #2E4756;
-    /* color:whitesmoke; */
-    font-size: medium;
-    font-family: Helvetica,Arial,sans-serif;
-    padding: 14px 20px;
-    margin: 8px 0;
+#contactBtn {
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
+    border-radius: 40px;
+    background:#e8a87c;
+    color: black;
+    padding: 10px 37px;
+    margin: 10px 0 20px 60px;
+    font-size: 20px;
     
+}
+#contactBtn:hover{
+    color:white;
 }
 
 .contactInfo {
