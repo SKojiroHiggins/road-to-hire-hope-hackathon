@@ -84,11 +84,24 @@ nav li a:hover{
 
 
 /* Info Cards */
+/*Info Card Title: What We Do*/
+#whatWeDo{
+    text-align: center;
+    padding-top: 20px;
+    color: #41B3A3;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    background-color: #e8a876;
+    font-size: 50px;
+    height: 80px;
+    /* margin-top: 20px;
+    margin-bottom: 10px; */
+}
 .infoCards{
     height: 300px;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 75px;
+    /* padding-top: 75px; */
 }
 
 .card-1, .card-2, .card-3{
@@ -98,13 +111,40 @@ nav li a:hover{
     text-align: center;
     border-radius: 1em;
 }
+
+/* HOW IT WORKS */
+
+.hiwGrid {
+    height: 300px;
+    width: 100%;
+    padding: 60px 0px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr 1fr);
+}
+
+
 /* Featured Mentors */
+/*Title*/
+.featMentors{
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 250px 0;
+    border: 2px solid black;
+    border-radius: 100px;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #41b3a3;
+    background-color: rgb(230, 224, 224);
+    font-size: 50px;
+    height: 80px;
+}
 .mentors{
     height: 300px;
     display: flex;
     justify-content: flex-start;
     margin: 20px;
-    padding: 40px;
     border-radius: 40px;
     background:#41B3A3;
     color: #f9f9f9;
@@ -121,17 +161,6 @@ nav li a:hover{
     background-color: #41b3a3;
 }
 
-/* HOW IT WORKS */
-
-.hiwGrid {
-    height: 300px;
-    width: 100%;
-    padding: 60px 0px;
-    margin: auto;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(1, 2fr 1fr);
-}
 
 
 
@@ -242,28 +271,54 @@ input[type=submit] {
 }
 
 /*SIGN UP*/
+.signUpTitle{
+    text-align: center;
+    padding-top: 25px;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #41b3a3;
+    background-color: rgb(230, 224, 224);
+    font-size: 50px;
+    height: 80px;
+
+}
+
 .signUp{
     background-color: #e8a87c;
-    height: 900px;
+    height: 1000px;
     width: 90%;
     margin: 30px 50px;
     border-radius: 40px;
-    justify-content: space-evenly;
+
 }
-.legend{
-    justify-content: center;
-}
-.firstName, .lastName, .choice, .career, .distance, .language{
-    padding: 30px 20px;
+
+.firstName, .choice, .distance{
+    padding: 50px 20px ;
     border: none;
     border-radius: 40px;
+    width: 400px;
     background:#41B3A3;
     color: #f9f9f9;
-    margin: 20px 0 20px 20px;
+    margin: 30px 0px 20px 30px;
+    height: 5px;
+    font-size: 20px;
+    text-align: center;
+    font:"Montserrat",sans-serif;
+}
+.lastName, .career, .language{
+    padding: 50px 20px;
+    border: none;
+    border-radius: 40px;
+    width: 400px;
+    color:#41B3A3;
+    background: #f9f9f9;
+    margin: 40px 30px;
     height: 5px;
     font-size: 20px;
     text-decoration: none;
+    text-align: center;
     font:"Montserrat",sans-serif;
+
 }
 
 
@@ -271,10 +326,10 @@ input[type=submit] {
 .buttons{
     display:flex;
     justify-content: center;
-    align-items: center;
     float: right;
+    
 }
-.btn-submit, .btn-cancel{
+#submitBtn, #cancelBtn{
     border: none;
     border-radius: 40px;
     background:#41B3A3;
