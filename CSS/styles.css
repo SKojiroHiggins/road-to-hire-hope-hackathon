@@ -60,10 +60,7 @@ nav li a:hover{
     color:white;
 }
 /*************************Header Ends********************************/
-<<<<<<< HEAD
-=======
 
->>>>>>> e86be40a666fbb77feb07f21456f40a8d69634d3
 /***********************Main Content******************************/
 .main-container{
     background-color: white;
@@ -162,7 +159,7 @@ nav li a:hover{
 .sign-up{ 
     border: none;
     border-radius: 40px;
-    background:#41B3A3;
+    background:#e8a87c;
     color: white;
     padding: 10px 37px;
     margin: 10px 0 20px 60px;
@@ -184,7 +181,7 @@ nav li a:hover{
     justify-content: center;
     border: none;
     border-radius: 40px;
-    background:#41B3A3;
+    background:#e8a87c;
     color: #f9f9f9;
     padding: 10px 37px;
     margin: 10px 0 20px 60px;
@@ -227,7 +224,7 @@ nav li a:hover{
     color: #41B3A3;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
-    background-color: #e8a876;
+    background-color: #e27d60;
     font-size: 50px;
     height: 80px;
     /* margin-top: 20px;
@@ -619,6 +616,10 @@ input[type=submit] {
 /* --------FOOTER -----------
 -----------------------------
 ----------------------------- */
+
+footer{
+    background-color: #41B3A3;
+}
 
 .footerContainer {
     width: 100%;
