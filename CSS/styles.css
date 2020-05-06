@@ -183,6 +183,7 @@ nav li a:hover{
     margin: 5px;
     text-align: center;
     border-radius: 1em;
+    width: 300px;
 }
 
 /* HOW IT WORKS */
@@ -213,6 +214,7 @@ nav li a:hover{
     font-size: 50px;
     height: 80px;
 }
+
 .mentors{
     height: 300px;
     display: flex;
@@ -224,6 +226,12 @@ nav li a:hover{
     font-size: 20px;
     text-decoration: none;
 }
+
+span{
+    text-decoration: underline;
+    font-size: 25px;
+}
+
 #mentor-1, #mentor-2, #mentor-3, #mentor-4{
     text-align: center;
     /* border: 1px solid #f9f9f9; */
