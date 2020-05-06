@@ -50,6 +50,11 @@ nav li a:hover{
     align-items: center;
 }
 
+/* MAP API */
+#map {
+    height: 500px;
+    width: 100%;
+}
 .container{
     display:flex;
     justify-content: center;
@@ -112,6 +117,7 @@ nav li a:hover{
     margin: 5px;
     text-align: center;
     border-radius: 1em;
+    width: 300px;
 }
 
 /* HOW IT WORKS */
@@ -142,6 +148,7 @@ nav li a:hover{
     font-size: 50px;
     height: 80px;
 }
+
 .mentors{
     height: 300px;
     display: flex;
@@ -153,6 +160,12 @@ nav li a:hover{
     font-size: 20px;
     text-decoration: none;
 }
+
+span{
+    text-decoration: underline;
+    font-size: 25px;
+}
+
 #mentor-1, #mentor-2, #mentor-3, #mentor-4{
     text-align: center;
     /* border: 1px solid #f9f9f9; */
@@ -160,9 +173,33 @@ nav li a:hover{
     margin: 15px;
     height: 260px;
     width: 25%;
-    background-color: #41b3a3;
+    /* background-color: #41b3a3; */
 }
 
+#mentor-1 img {
+    width: 100px;
+    height:100px;
+    border:1px solid #E1e0DE;
+    border-radius: 50%;
+}
+#mentor-2 img {
+    width: 100px;
+    height:100px;
+    border:1px solid #E1e0DE;
+    border-radius: 50%;
+}
+#mentor-3 img {
+    width: 100px;
+    height:100px;
+    border:1px solid #E1e0DE;
+    border-radius: 50%;
+}
+#mentor-4 img {
+    width: 100px;
+    height:100px;
+    border:1px solid #E1e0DE;
+    border-radius: 50%;
+}
 
 /*****************SIGN UP PAGE ***************/
 /* .signUpTitle{
@@ -245,6 +282,9 @@ nav li a:hover{
 
 } */
 
+.featured-img {
+ position: relative;
+}
 
 /*Buttons*/
 .buttons{
