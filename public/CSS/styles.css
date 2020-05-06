@@ -60,10 +60,6 @@ nav li a:hover{
     color:white;
 }
 /*************************Header Ends********************************/
-<<<<<<< HEAD
-=======
-
->>>>>>> e86be40a666fbb77feb07f21456f40a8d69634d3
 /***********************Main Content******************************/
 #main-container{
     background-color: white;
@@ -94,10 +90,8 @@ nav li a:hover{
     font-size:14px;
     text-transform: uppercase;
   }
-<<<<<<< HEAD:CSS/styles.css
   
   
-=======
 #main-container h4{
     font-style: italic;
     color:#999;
@@ -111,7 +105,6 @@ nav li a:hover{
     columns: #4e4e4e;
 }
 
->>>>>>> origin/dev:public/CSS/styles.css
   .heading{
     display: flex;
     justify-content: center;
@@ -316,11 +309,11 @@ span{
 }
 
  .mentor-img { 
-    width: 10vw;
-    height: 15vh;
+    width: 125px;
+    height: 125px;
     border:1px solid #E1e0DE;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /*****************SIGN UP PAGE ***************/

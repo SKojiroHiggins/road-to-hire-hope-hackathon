@@ -11,134 +11,83 @@
 
 
 <body>
-<<<<<<< HEAD:signup.html
     <header>
         <a href="index.html"><img class="logo" src="photos/logo.png" alt="picture of logo"></a>
-           <nav>
-               <ul class="mixer-nav">
-                   <li><a class="current" href="index.html">Home</a> </li>
-                   <li><a href="signup.html">Sign Up</a></li>
-                   <li><a href="contact.html">Contact</a></li>
-               </ul>
-           </nav>
+        <nav>
+            <ul class="mixer-nav">
+                <li><a class="current" href="index.html">Home</a> </li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="suHero">
         <h2>Create a new profile!</h2>
     </div>
     <div class="suGrid">
-    <div class="suFormcontainer">
-        <form class="signUp" method="POST">   
-            <fieldset>        
-                <legend>Student Info</legend>    
-            <ul>
-                <li>
-            <label>Your Name</label>
-            <input type="text" id="firstName" placeholder="First Name" required>
-       
-            <input type="text" id="lastName" placeholder="Last Name" required>
-                </li>
-                <li>
-                    <label>Email</label>
-                    <input type="text" id="email" placeholder="Email" required>
-                </li>
-            <li>
-            <label>What Are You Looking For?</label>
-            <input type="radio" name="distance" value="10"> Mentor
-            <input type="radio" name="distance" value="20"> Tutor
-            <input type="radio" name="distance" value="50"> Both
-        </li>
-        <li>
-            <label>Career Interest</label>
-            <select id="careerList" class="selectCss">
-                <option value="1">STEM</option>
-                <option value="3">Healthcare</option>
-                <option value="2">Arts</option>
-                <option value="3">Finance</option>
-                <option value="4">Law</option>
-            </select>
-        </li>
-    </fieldset> 
-    <fieldset>
-        <legend>Additional Info</legend>    
-        <li>
-            <label>Mile Radius:</label>
-            <input type="radio" name="distance" value="10"> Less Than 10 miles
-            <input type="radio" name="distance" value="20"> Less Than 20 miles
-            <input type="radio" name="distance" value="50"> Less Than 50 miles
-        </li>
-        <li>
-            <label>Preferred Language</label>
-            <select id="languageList" class="selectCss">
-                <option value="1">English</option>
-                <option value="1">Spanish</option>
-                <option value="2">French</option>
-                <option value="1">Mandarian</option>
-                <option value="3">Portuguese</option>
-                <option value="4">Japanese</option>
-                <option value="1">Russian</option>
-            </select>
-        </li>
-        <article class="buttons">
-            <button id="submitBtn"> <a href="./maincontent.html">Create Profile</a> </button>
+        <div class="suFormcontainer">
+            <form class="signUp" method="POST">
+                <fieldset>
+                    <legend>Student Info</legend>
+                    <ul>
+                        <li>
+                            <label>Your Name</label>
+                            <input type="text" id="firstName" placeholder="First Name" required>
 
-        <input id="cancelBtn" type="submit" value="Cancel">
-        </article>
-            </ul>
-           
-        </fieldset>
-=======
-    <legend class="signUpTitle">Sign Up!</legend>
+                            <input type="text" id="lastName" placeholder="Last Name" required>
+                        </li>
+                        <li>
+                            <label>Email</label>
+                            <input type="text" id="email" placeholder="Email" required>
+                        </li>
+                        <li>
+                            <label>What Are You Looking For?</label>
+                            <input type="radio" name="distance" value="10"> Mentor
+                            <input type="radio" name="distance" value="20"> Tutor
+                            <input type="radio" name="distance" value="50"> Both
+                        </li>
+                        <li>
+                            <label>Career Interest</label>
+                            <select id="careerList" class="selectCss">
+                                <option value="1">STEM</option>
+                                <option value="3">Healthcare</option>
+                                <option value="2">Arts</option>
+                                <option value="3">Finance</option>
+                                <option value="4">Law</option>
+                            </select>
+                        </li>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Info</legend>
+                    <li>
+                        <label>Mile Radius:</label>
+                        <input type="radio" name="distance" value="10"> Less Than 10 miles
+                        <input type="radio" name="distance" value="20"> Less Than 20 miles
+                        <input type="radio" name="distance" value="50"> Less Than 50 miles
+                    </li>
+                    <li>
+                        <label>Preferred Language</label>
+                        <select id="languageList" class="selectCss">
+                            <option value="1">English</option>
+                            <option value="1">Spanish</option>
+                            <option value="2">French</option>
+                            <option value="1">Mandarian</option>
+                            <option value="3">Portuguese</option>
+                            <option value="4">Japanese</option>
+                            <option value="1">Russian</option>
+                        </select>
+                    </li>
+                    <article class="buttons">
+                        <button id="submitBtn"> <a href="./maincontent.html">Create Profile</a> </button>
 
-        <form class="signUp" action="/match" method="post">                
-                <div class="firstName">
-                    <label>First Name</label>
-                    <input name="firstName" type="text" id="firstName" value="firstName" />
-                </div>
-                <div class="lastName">
-                    <label>Last Name</label>
-                    <input name="lastName" type="text" id="lastName" value="lastName" />
-                </div>
-                <div class="choice">
-                    <label>What Are You Looking For?:</label>
-                    <input type="radio" name="looking" value="Mentor">Mentor
-                    <input type="radio" name="looking" value="Tutor">Tutor
-                    <input type="radio" name="looking" value="Both">Both
-                    <br>
-                </div>
-                <div class="career">
-                    <label>Career Interest</label>
-                    <select name="interest" id="careerList">
-                        <option value="Tech">Tech</option>
-                        <option value="Science">Science</option>
-                        <option value="Finance">Finance</option>
-                        <option value="Law">Law</option>
-                    </select>
-                </div>
-                <div class="distance">
-                    <label>Mile Radius:</label>
-                    <input type="radio" name="distance" value="10">Less Than 10 miles
-                    <input type="radio" name="distance" value="20">Less Than 20 miles
-                    <input type="radio" name="distance" value="50">Less Than 50 miles
-                    <br>
-                </div>
-                <div class="language">
-                    <label>Preferred Language</label>
-                    <select name="language" id="languageList">
-                        <option value="English">English</option>
-                        <option value="Spanish">Spanish</option>
-                        <option value="French">French</option>
-                        <option value="Portuguese">Portuguese</option>
-                        <option value="Japanese">Japanese</option>
-                    </select>
-                </div>
-                <article class="buttons">
-                <input id="submitBtn" type="submit" value="Submit now">
-                <input id="cancelBtn" type="submit" value="Cancel now">
-                </article>
->>>>>>> origin/dev:public/signup.html
-        </form>
-    </div>
+                        <input id="cancelBtn" type="submit" value="Cancel">
+                    </article>
+                    </ul>
+
+                </fieldset>
+            </form>
+        </div>
         <article>
             <div class="photo">
                 <div class="imgIcon"><img src="./photos/ImagePlaceholder.png" alt="image placeholder"></a></div>
@@ -158,9 +107,12 @@
             <div class="socialMedia">
                 <H3>STAY CONNECTED</H3>
                 <ul>
-                    <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.twitter.com/" aria-label="Twitter"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa fa-facebook fa-lg"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.twitter.com/" aria-label="Twitter"><i class="fa fa-twitter fa-lg"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa fa-instagram fa-lg"
+                                aria-hidden="true"></i></a></li>
                 </ul>
             </div>
             <div class="quickLinks">
@@ -174,7 +126,7 @@
                     <li>For Mentors / Tutors</li>
                 </ul>
             </div>
-            
+
         </section>
         <div class="copyright">
             <p>© MENTOR MIXER</p>
