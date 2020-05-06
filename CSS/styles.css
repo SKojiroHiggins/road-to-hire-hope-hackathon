@@ -188,16 +188,36 @@ nav li a:hover{
 
 /*SIGN UP*/
 .signUp{
-    height: 500px;
+    background-color: #e8a87c;
+    height: 900px;
     width: 90%;
+    margin: 30px 50px;
+    border-radius: 40px;
     justify-content: space-evenly;
 }
+.legend{
+    justify-content: center;
+}
+.firstName, .lastName, .choice, .career, .distance, .language{
+    padding: 30px 20px;
+    border: none;
+    border-radius: 40px;
+    background:#41B3A3;
+    color: #f9f9f9;
+    margin: 20px 0 20px 20px;
+    height: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    font:"Montserrat",sans-serif;
+}
+
 
 /*Buttons*/
 .buttons{
     display:flex;
     justify-content: center;
     align-items: center;
+    float: right;
 }
 .btn-submit, .btn-cancel{
     border: none;
@@ -205,11 +225,10 @@ nav li a:hover{
     background:#41B3A3;
     color: #f9f9f9;
     padding: 10px 37px;
-    margin: 10px 0 20px 60px;
+    margin: 50px 0 20px 20px;
     font-size: 20px;
     text-decoration: none;
     font:"Montserrat",sans-serif;
-    
 }
 .btn-submit:hover, .btn-cancel:hover{
     color: purple;
