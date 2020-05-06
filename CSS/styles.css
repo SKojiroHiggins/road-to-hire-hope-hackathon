@@ -11,15 +11,30 @@
 /*************Header****/
 header{
     background-color: #41B3A3;
+    padding:30px 2%;
+   
+    
+}
+.logoitem{
+    justify-self: flex-end;
+}
+
+nav{
+    padding-left: ;
+    background-color: #41B3A3;
     display:flex;
     justify-content: center;
     align-items: center ;
     padding:30px 10%;
+   
+
 }
 
+
 .logo{
-    float: left;
-    height:100px;
+   float: left;
+   height:100px;
+ 
 }
 
 li a{
@@ -45,7 +60,6 @@ nav li a:hover{
     color:white;
 }
 /*************************Header Ends********************************/
-<<<<<<< HEAD
 /***********************Main Content******************************/
 .main-container{
     background-color: white;
@@ -119,9 +133,7 @@ nav li a:hover{
              line-height:25px;
             columns: #4e4e4e;}
   /**************************Main Content Ends*****************************/
-=======
 
->>>>>>> bcfcb3b883dad01c619900fcb5e81e738f513418
 
 #hero-main{
     background: url(/photos/heromentor.jpg) no-repeat center center/cover;
@@ -147,7 +159,7 @@ nav li a:hover{
     border: none;
     border-radius: 40px;
     background:#41B3A3;
-    color: #f9f9f9;
+    color: white;
     padding: 10px 37px;
     margin: 10px 0 20px 60px;
     font-size: 20px;
@@ -155,6 +167,14 @@ nav li a:hover{
   
 }
 
+.sign-up a{
+    transition: all 0.3s ease 0s;
+    color:black;
+}
+
+.sign-up a:hover{
+    color: white;
+}
 .sign-up-bottom{
     display: flex;
     justify-content: center;
