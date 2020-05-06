@@ -3,27 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css"/>
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div id="map"></div>
+    <header>
+        <img class="logo" src="" alt="">
+           <nav>
+               <ul class="mixer-nav">
+                   <li><a class="current" href="index.html">Home</a> </li>
+                   <li><a href="signup.html">Sign Up</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+               </ul>
+           </nav>
+   </header>
+    
+   <section class="contactContainer">
+        <div class="contactHero">
+            <h3>CONTACT US</h3>
+        </div>
+        <div class="contactGrid">
+            <div class="formContainer">
+                <form class="contactForm" method="POST">
+                    <ul>
+                   <li> 
+                       <label for='firstName'>
+                        <input type="text" id="firstName" placeholder="First Name" maxlength="30" required>
+                        </label>
+        
+                        <label for='lastName'>
+                        <input type="text" id="lastName" placeholder="Last Name" maxlength="30" required>
+                        </label>
+                    </li>
+        
+                    <li>
+                    <label for='email'>
+                        <input type="text" id="email" placeholder="Email" maxlength="30" required>
+                    </label>
+        
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="productInquiry">Product Inquiry</option>
+                        <option value="orderTracking">Order Tracking</option>
+                        <option value="orderDetails">Order Details</option>
+                        <option value="returnsExchanges">Returns/Exchanges</option>
+                      </select>
+                    </li>
+        
+                    <li>
+                    <label for='comments'>Comments (2000 Character Limit)
+                        <textarea id='comments' style="height:80px;" placeholder="Any Questions?" maxlength="2000" required></textarea>
+                    </label>
+                    </li>
+        
+                    <li>
+                    <input type="submit" value="Submit">
+                    </li>
+
+                </ul>
+                </form>
+            </div>
+            <div class="contactInfo">
+
+            </div>
+        </div>
+   </section>
+
+
+
+   <footer>
+    <section class="footerContainer">
+        <div class="contactUs">
+            <h3>CONTACT US</h3>
+            <ul>
+                <li>704-333-3333</li>
+                <li>contact@mentormixer.com</li>
+            </ul>
+        </div>
+        <div class="socialMedia">
+            <H3>STAY CONNECTED</H3>
+            <ul>
+                <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.twitter.com/" aria-label="Twitter"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="quickLinks">
+            <h3>QUICK LINKS</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Terms of Use</li>
+                <li>Privacy Policy</li>
+                <li>FAQs</li>
+                <li>For Mentees</li>
+                <li>For Mentors / Tutors</li>
+            </ul>
+        </div>
+        
+    </section>
+    <div class="copyright">
+        <p>© MENTOR MIXER</p>
+    </div>
+</footer>
 </body>
-
-<script>
-    function initMap() {
-        var location = { lat: 35.007599, lng: -80.94321 };
-        var map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 4,
-            center: location
-        });
-        var marker = new google.maps.Marker({
-            position: location,
-            map: map
-        });
-    }
-
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiBs49ob-Gh2WXDZsMVXLFO-rmoy14bDI&callback=initMap"></script>
-
 </html>
