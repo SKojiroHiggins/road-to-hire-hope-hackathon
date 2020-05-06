@@ -45,6 +45,7 @@ nav li a:hover{
     color:white;
 }
 /*************************Header Ends********************************/
+
 /***********************Main Content******************************/
 .main-container{
     background-color: white;
@@ -278,29 +279,12 @@ span{
     /* background-color: #41b3a3; */
 }
 
-#mentor-1 img {
-    width: 100px;
-    height:100px;
+ .mentor-img { 
+    width: 10vw;
+    height: 15vh;
     border:1px solid #E1e0DE;
     border-radius: 50%;
-}
-#mentor-2 img {
-    width: 100px;
-    height:100px;
-    border:1px solid #E1e0DE;
-    border-radius: 50%;
-}
-#mentor-3 img {
-    width: 100px;
-    height:100px;
-    border:1px solid #E1e0DE;
-    border-radius: 50%;
-}
-#mentor-4 img {
-    width: 100px;
-    height:100px;
-    border:1px solid #E1e0DE;
-    border-radius: 50%;
+    margin-top: 20px;
 }
 
 /*****************SIGN UP PAGE ***************/
