@@ -12,18 +12,19 @@
 <body>
     <header>
         <a href="index.html"><img class="logo" src="photos/logo.png" alt="picture of logo"></a>
-        <nav>
-            <ul class="mixer-nav">
-                <li><a class="current" href="index.html">Home</a> </li>
-                <li><a href="signup.html">Sign Up</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="contactContainer">
-        <div class="contactHero">
-            <h3>CONTACT US</h3>
+           <nav>
+               <ul class="mixer-nav">
+                   <li><a class="current" href="index.html">Home</a> </li>
+                   <li><a href="signup.html">Sign Up</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+               </ul>
+           </nav>
+   </header>
+    
+   <section class="contactContainer">
+        <div class="heroContainer">
+            <h2>CONTACT US</h2>
+            <h3>We're here to help!</h3>
         </div>
         <div class="contactGrid">
             <div class="formContainer">
@@ -61,37 +62,6 @@
                     <li>
                     <input type="submit" value="Submit">
                     </li>
-
-                            <label for='lastName'>
-                                <input type="text" id="lastName" placeholder="Last Name" maxlength="30" required>
-                            </label>
-                        </li>
-
-                        <li>
-                            <label for='email'>
-                                <input type="text" id="email" placeholder="Email" maxlength="30" required>
-                            </label>
-
-                            <label for="subject">Subject</label>
-                            <select id="subject" name="subject">
-                                <option value="productInquiry">Product Inquiry</option>
-                                <option value="orderTracking">Order Tracking</option>
-                                <option value="orderDetails">Order Details</option>
-                                <option value="returnsExchanges">Returns/Exchanges</option>
-                            </select>
-                        </li>
-
-                        <li>
-                            <label for='comments'>Comments (2000 Character Limit)
-                                <textarea id='comments' style="height:80px;" placeholder="Any Questions?"
-                                    maxlength="2000" required></textarea>
-                            </label>
-                        </li>
-
-                        <li>
-                            <input type="submit" value="Submit">
-                        </li>
-
                     </ul>
                 </form>
             </div>
@@ -101,9 +71,10 @@
                     <li>704-333-3333</li>
                     <li>contact@mentormixer.com</li>
                 </ul>
+                <div id="map"></div>
             </div>
         </div>
-        <div id="map"></div>
+
     </section>
 
 
