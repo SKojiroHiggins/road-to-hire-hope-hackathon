@@ -540,6 +540,7 @@ span{
 
 .heroContainer h3 {
     font-size: 25px;
+    color: #E27D60;
 }
 
 .contactForm li {
@@ -600,7 +601,7 @@ input[type=submit] {
 
 .contactInfo h3 {
     font-size: 40;
-    
+    color: #E27D60;
 }
 
 .contactInfo li {
@@ -653,6 +654,10 @@ footer{
     list-style: none;
     display: inline-block;
     margin: 0px 20px;
+}
+
+.socialMedia a:hover {
+    color: white;
 }
 
 .quickLinks {
