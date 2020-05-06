@@ -281,8 +281,8 @@ nav li a:hover{
     justify-content: flex-start;
     margin: 20px;
     border-radius: 40px;
-    background:#41B3A3;
-    color: #f9f9f9;
+    background:white;
+    color: black;
     font-size: 20px;
     text-decoration: none;
 }
