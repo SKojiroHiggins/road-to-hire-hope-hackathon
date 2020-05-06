@@ -46,7 +46,7 @@ app.post('/match', (req, res) => {
         }
     });
 
-    fs.writeFileSync('./public/profileData.json', JSON.stringify(data));
+    // fs.writeFileSync('./public/profileData.json', JSON.stringify(data));
 
 
 
