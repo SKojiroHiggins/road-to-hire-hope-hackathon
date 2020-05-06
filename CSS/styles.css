@@ -60,6 +60,10 @@ nav li a:hover{
     color:white;
 }
 /*************************Header Ends********************************/
+<<<<<<< HEAD
+=======
+
+>>>>>>> e86be40a666fbb77feb07f21456f40a8d69634d3
 /***********************Main Content******************************/
 .main-container{
     background-color: white;
@@ -301,29 +305,12 @@ span{
     /* background-color: #41b3a3; */
 }
 
-#mentor-1 img {
-    width: 100px;
-    height:100px;
+ .mentor-img { 
+    width: 10vw;
+    height: 15vh;
     border:1px solid #E1e0DE;
     border-radius: 50%;
-}
-#mentor-2 img {
-    width: 100px;
-    height:100px;
-    border:1px solid #E1e0DE;
-    border-radius: 50%;
-}
-#mentor-3 img {
-    width: 100px;
-    height:100px;
-    border:1px solid #E1e0DE;
-    border-radius: 50%;
-}
-#mentor-4 img {
-    width: 100px;
-    height:100px;
-    border:1px solid #E1e0DE;
-    border-radius: 50%;
+    margin-top: 20px;
 }
 
 /*****************SIGN UP PAGE ***************/
@@ -338,14 +325,23 @@ span{
     height: 80px;
 
 } */
+.suGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr 1fr);
+    padding: 20px;
+    background-color: #e8a87c;
+    /* width: 90%; */
+}
+
+.suFormcontainer {
+    padding-left: 150px;
+}
 
 .signUp{
-    background-color: #e8a87c;
-    height: 1000px;
-    width: 90%;
-    margin: 30px 50px;
+    height: 750px;
+    
+    /* margin: 30px 50px; */
     /* border-radius: 40px; */
-
 }
 
 .signUp fieldset {
@@ -353,7 +349,7 @@ span{
 }
 
 .signUp legend {
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
     margin-top: 50px;
     font-size: 20px;
 }
@@ -365,7 +361,7 @@ span{
 
 .signUp li {
     list-style: none;
-    margin: 35px;
+    margin-bottom: 25px;
     
 }
 
@@ -376,6 +372,7 @@ span{
     border-radius: 4px;
     box-sizing: border-box;
     font-size: medium;
+    /* width: 200px; */
 }
 
 /* .firstName, .choice, .distance{
@@ -418,13 +415,14 @@ span{
     float: right;
     
 }
-#submitBtn, #cancelBtn{
+#submitBtn, #cancelBtn, #photoBtn{
     border: none;
     border-radius: 40px;
     background:#41B3A3;
     color: #f9f9f9;
     padding: 10px 37px;
     margin: 50px 0 20px 20px;
+    width: 200px;
     font-size: 20px;
     text-decoration: none;
     font:"Montserrat",sans-serif;
@@ -432,7 +430,10 @@ span{
 .btn-submit:hover, .btn-cancel:hover{
     color: purple;
 }
-
+/*Upload Photo*/
+.uploadPhoto{
+    
+}
 
 
 
@@ -594,7 +595,7 @@ input[type=submit] {
 
 .contactInfo {
     margin-top: 20px;
-    margin-right: 100px;
+    margin-right: 70px;
     text-align: center;
 }
 
@@ -607,6 +608,11 @@ input[type=submit] {
     list-style: none;
     margin: 35px;
     
+}
+
+#map {
+    max-height: 300px;
+    width: 100%;
 }
 
 
