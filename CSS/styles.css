@@ -315,14 +315,23 @@ span{
     height: 80px;
 
 } */
+.suGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr 1fr);
+    padding: 20px;
+    background-color: #e8a87c;
+    /* width: 90%; */
+}
+
+.suFormcontainer {
+    padding-left: 150px;
+}
 
 .signUp{
-    background-color: #e8a87c;
-    height: 1000px;
-    width: 90%;
-    margin: 30px 50px;
+    height: 750px;
+    
+    /* margin: 30px 50px; */
     /* border-radius: 40px; */
-
 }
 
 .signUp fieldset {
@@ -330,7 +339,7 @@ span{
 }
 
 .signUp legend {
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
     margin-top: 50px;
     font-size: 20px;
 }
@@ -342,7 +351,7 @@ span{
 
 .signUp li {
     list-style: none;
-    margin: 35px;
+    margin-bottom: 25px;
     
 }
 
@@ -353,6 +362,7 @@ span{
     border-radius: 4px;
     box-sizing: border-box;
     font-size: medium;
+    /* width: 200px; */
 }
 
 /* .firstName, .choice, .distance{
