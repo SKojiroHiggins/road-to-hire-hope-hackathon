@@ -145,7 +145,7 @@ nav li a:hover{
 
 
 #hero-main{
-    background: url(/photos/heromentor.jpg) no-repeat center center/cover;
+    background: url(/public/photos/heromentor.jpg) no-repeat center center/cover;
     height:700px;
     display: flex;
     justify-content: center;
@@ -201,7 +201,8 @@ nav li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .sign-up-bottom a{
@@ -226,14 +227,19 @@ nav li a:hover{
 
 /* Info Cards */
 /*Info Card Title: What We Do*/
-#whatWeDo{
+
+.whatWeDo {
+    background-color: #e27d60;
+    height: 150px;
+}
+
+.whatWeDo h2 {
     text-align: center;
     padding-top: 20px;
     color: #41B3A3;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
-    background-color: #e27d60;
-    font-size: 50px;
+    font-size: 100px;
     height: 80px;
     /* margin-top: 20px;
     margin-bottom: 10px; */
@@ -261,26 +267,41 @@ nav li a:hover{
     width: 100%;
     padding: 60px 0px;
     margin: auto;
-    text-align: center;
     display: grid;
     grid-template-columns: repeat(1, 2fr 1fr);
+}
+
+.rightSide h3 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.rightSide ol {
+    line-height: 35px;
+    padding-left: 80px;
+}
+
+.leftSide {
+    background: url(/public/photos/howitworks.jpg) no-repeat center center/cover;
 }
 
 
 /* Featured Mentors */
 /*Title*/
-.featMentors{
+
+.featMentors {
+    background-color: #e27d60;
+    height: 150px;
+}
+
+.featMentors h2 {
     text-align: center;
-    padding-top: 20px;
-    margin: 0 250px 0;
-    border: 2px solid black;
-    border-radius: 100px;
-    color: black;
+    padding-top: 15px;
+    color: #41b3a3;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #41b3a3;
-    background-color: rgb(230, 224, 224);
-    font-size: 50px;
-    height: 80px;
+    -webkit-text-stroke-color: black;
+    font-size: 100px;
 }
 
 .mentors{
