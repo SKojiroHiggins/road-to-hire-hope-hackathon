@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -20,7 +21,60 @@
         </nav>
     </header>
 
-    <div id="map"></div>
+    <section class="contactContainer">
+        <div class="contactHero">
+            <h3>CONTACT US</h3>
+        </div>
+        <div class="contactGrid">
+            <div class="formContainer">
+                <form class="contactForm" method="POST">
+                    <ul>
+                        <li>
+                            <label for='firstName'>
+                                <input type="text" id="firstName" placeholder="First Name" maxlength="30" required>
+                            </label>
+
+                            <label for='lastName'>
+                                <input type="text" id="lastName" placeholder="Last Name" maxlength="30" required>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for='email'>
+                                <input type="text" id="email" placeholder="Email" maxlength="30" required>
+                            </label>
+
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="productInquiry">Product Inquiry</option>
+                                <option value="orderTracking">Order Tracking</option>
+                                <option value="orderDetails">Order Details</option>
+                                <option value="returnsExchanges">Returns/Exchanges</option>
+                            </select>
+                        </li>
+
+                        <li>
+                            <label for='comments'>Comments (2000 Character Limit)
+                                <textarea id='comments' style="height:80px;" placeholder="Any Questions?"
+                                    maxlength="2000" required></textarea>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="submit" value="Submit">
+                        </li>
+
+                    </ul>
+                </form>
+            </div>
+            <div class="contactInfo">
+
+            </div>
+        </div>
+        <div id="map"></div>
+    </section>
+
+
 
     <footer>
         <section class="footerContainer">
@@ -60,7 +114,6 @@
         </div>
     </footer>
 </body>
-
 <script>
     function initMap() {
         //Map options
@@ -127,5 +180,4 @@
 </script>
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDozSqDbP25gp28gZHBaqN-1MdTm9B5YXY&callback=initMap"></script>
-
 </html>
