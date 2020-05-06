@@ -4,22 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Sign Up</title>
 </head>
+<header>
+    <img class="logo" src="" alt="">
+       <nav>
+           <ul class="mixer-nav">
+               <li><a class="current" href="index.html">Home</a> </li>
+               <li><a href="signup.html">Sign Up</a></li>
+               <li><a href="contact.html">Contact</a></li>
+           </ul>
+       </nav>
+</header>
 
 <body>
-    <article>
-        <form>
-            <fieldset>
-                <legend>Sign Up!</legend>
-                <p>
+    <legend class="signUpTitle">Sign Up!</legend>
+        <form class="signUp">                
+                <div class="firstName">
                     <label>First Name</label>
                     <input type="text" id="firstName" value="firstName" />
-                </p>
+                </div>
+                <div class="lastName">
                     <label>Last Name</label>
                     <input type="text" id="lastName" value="lastName" />
-                </p>
-                <p>
+                </div>
+                <div class="choice">
+                    <label>What Are You Looking For?:</label>
+                    <input type="radio" name="distance" value="10">Mentor
+                    <input type="radio" name="distance" value="20">Tutor
+                    <input type="radio" name="distance" value="50">Both
+                    <br>
+                </div>
+                <div class="career">
                     <label>Career Interest</label>
                     <select id="careerList">
                         <option value="1">Tech</option>
@@ -27,16 +44,15 @@
                         <option value="3">Finance</option>
                         <option value="4">Law</option>
                     </select>
-                </p>
-                <p>
+                </div>
+                <div class="distance">
                     <label>Mile Radius:</label>
                     <input type="radio" name="distance" value="10">Less Than 10 miles
                     <input type="radio" name="distance" value="20">Less Than 20 miles
                     <input type="radio" name="distance" value="50">Less Than 50 miles
                     <br>
-                    <input type="submit" value="Submit now">
-                </p>
-                <p>
+                </div>
+                <div class="language">
                     <label>Preferred Language</label>
                     <select id="languageList">
                         <option value="1">Spanish</option>
@@ -44,16 +60,46 @@
                         <option value="3">Portuguese</option>
                         <option value="4">Japanese</option>
                     </select>
-                </p>
-                <!-- <p>
-                    <label>Text Area</label>
-                    <textarea> id = "myTextArea"
-                            rows = "3"
-                            cols = "80">Your text here</textarea>
-                  </p> -->
-            </fieldset>
+                </div>
+                <article class="buttons">
+                <input id="submitBtn" type="submit" value="Submit now">
+                <input id="cancelBtn" type="submit" value="Cancel now">
+                </article>
         </form>
-    </article>
+    <footer>
+        <section class="footerContainer">
+            <div class="contactUs">
+                <h3>CONTACT US</h3>
+                <ul>
+                    <li>704-333-3333</li>
+                    <li>contact@mentormixer.com</li>
+                </ul>
+            </div>
+            <div class="socialMedia">
+                <H3>STAY CONNECTED</H3>
+                <ul>
+                    <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.twitter.com/" aria-label="Twitter"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="quickLinks">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>FAQs</li>
+                    <li>For Mentees</li>
+                    <li>For Mentors / Tutors</li>
+                </ul>
+            </div>
+            
+        </section>
+        <div class="copyright">
+            <p>© MENTOR MIXER</p>
+        </div>
+    </footer>
 </body>
 
 </html>
