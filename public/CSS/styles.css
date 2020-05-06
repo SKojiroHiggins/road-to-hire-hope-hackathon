@@ -207,10 +207,13 @@ nav li a:hover{
 
 .sign-up-bottom a{
     text-decoration: none;
+    color:black;
 }
 
-.sign-up a{text-decoration: none;
 
+
+.sign-up-bottom a:hover{
+    color:white;
 }
 
 .sign-up:hover{
