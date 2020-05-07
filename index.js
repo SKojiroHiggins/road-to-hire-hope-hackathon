@@ -39,7 +39,7 @@ app.post('/match', (req, res) => {
         distance: req.body.distance,
         language: req.body.language
     });
-
+    
     res.sendFile(path.join(__dirname + '/public/maincontent.html'));
 });
 
@@ -49,7 +49,6 @@ app.get('/api/profiles', (req, res) => {
         return res.status(404).send("Resource was not found. Please try again.");
 
     }
-    console.log(profileData)
     res.send(profileData);
 });
 
