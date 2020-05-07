@@ -88,40 +88,46 @@
                     return res.json()
                 })
                 .then((data) => {
-                    return data.map((profileItem) => {
-
-                        // Need: mentor sorting
-                        // if profileItem.
-
-
-                        let profileCard = createNode('div')
-                        let name = createNode('h3')
-                        let profession = createNode('h4')
-                        let type = createNode('p')
-                        let interest = createNode('p')
-                        let distance = createNode('p')
-                        let language = createNode('p')
-
-                        name.innerText = profileItem.firstName + ' ' + profileItem.lastName
-                        profession.innerText = profileItem.profession
-                        type.innerText = profileItem.type;
-                        interest.innerText = profileItem.interest;
-                        distance.innerText = profileItem.distance;
-                        language.innerText = profileItem.language;
-
-
-                        append(profileContainer, profileCard)
-                        append(profileCard, name)
-                        append(profileCard, profession)
-                        append(profileCard, type)
-                        append(profileCard, interest)
-                        append(profileCard, distance)
-                        append(profileCard, language)
+                    let userProfile;
+                    data.map((profileItem) => {
+                        if (profileItem.type == "student") {
+                            userProfile = profileItem;
+                        }
                     })
+
+                    return data.map((profileItem) => {
+                        // Need: mentor sorting
+                        if (profileItem.type === "mentor" & profileItem.interest === userProfile.interest) {
+                            let profileCard = createNode('div')
+                            let name = createNode('h3')
+                            let profession = createNode('h4')
+                            let type = createNode('p')
+                            let interest = createNode('p')
+                            let distance = createNode('p')
+                            let language = createNode('p')
+
+                            name.innerText = profileItem.firstName + ' ' + profileItem.lastName
+                            profession.innerText = profileItem.profession
+                            type.innerText = profileItem.type;
+                            interest.innerText = profileItem.interest;
+                            distance.innerText = profileItem.distance;
+                            language.innerText = profileItem.language;
+
+
+                            append(profileContainer, profileCard)
+                            append(profileCard, name)
+                            append(profileCard, profession)
+                            append(profileCard, type)
+                            append(profileCard, interest)
+                            append(profileCard, distance)
+                            append(profileCard, language)
+                        }
+                    })
+
                 })
-                .catch((err) => {
-                    console.log(err);
-                })
+                .catch ((err) => {
+            console.log(err);
+        })
         }
 
     </script>

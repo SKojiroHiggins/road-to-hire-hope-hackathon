@@ -31,7 +31,7 @@ app.post('/profile', (req, res) => {
 // creates a new profile
 app.post('/match', (req, res) => {  
     profileData.push( {
-        FirstName: req.body.firstName, 
+        firstName: req.body.firstName, 
         lastName: req.body.lastName,
         type: "student",
         looking: req.body.looking,
@@ -39,9 +39,6 @@ app.post('/match', (req, res) => {
         distance: req.body.distance,
         language: req.body.language
     });
-
-
-    console.log(profileData);
 
     res.sendFile(path.join(__dirname + '/public/maincontent.html'));
 });
@@ -52,6 +49,7 @@ app.get('/api/profiles', (req, res) => {
         return res.status(404).send("Resource was not found. Please try again.");
 
     }
+    console.log(profileData)
     res.send(profileData);
 });
 

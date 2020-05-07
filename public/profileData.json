@@ -4,7 +4,7 @@
         "lastName": "fake lastName1",
         "profession": "fake profession1",
         "type": "mentor", 
-        "interest": "fake interest1",
+        "interest": "STEM",
         "distance": "fake distance1",
         "language": "fake language1"
     },
@@ -13,7 +13,7 @@
         "lastName": "fake lastName2",
         "profession": "fake profession1",
         "type": "tutor", 
-        "interest": "fake interest2",
+        "interest": "STEM",
         "distance": "fake distance2",
         "language": "fake language2"
     },
@@ -23,6 +23,15 @@
         "profession": "fake profession1",
         "type": "mentor", 
         "interest": "fake interest3",
+        "distance": "fake distance3",
+        "language": "fake language3"
+    },
+    {
+        "firstName": "fake firstName3",
+        "lastName": "fake lastName3",
+        "profession": "fake profession1",
+        "type": "fake", 
+        "interest": "STEMS",
         "distance": "fake distance3",
         "language": "fake language3"
     }

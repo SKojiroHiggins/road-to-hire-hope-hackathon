@@ -33,9 +33,9 @@
                     <ul>
                         <li>
                             <label>Your Name</label>
-                            <input type="text" id="firstName" placeholder="First Name" required>
+                            <input name="firstName" type="text" id="firstName" placeholder="First Name" required>
 
-                            <input type="text" id="lastName" placeholder="Last Name" required>
+                            <input name="lastName" type="text" id="lastName" placeholder="Last Name" required>
                         </li>
                         <li>
                             <label>Email</label>
@@ -49,11 +49,11 @@
                         </li>
                         <li>
                             <label>Career Interest</label>
-                            <select id="careerList" class="selectCss">
-                                <option value="1">STEM</option>
-                                <option value="3">Healthcare</option>
-                                <option value="2">Arts</option>
-                                <option value="3">Finance</option>
+                            <select name="interest" id="careerList" class="selectCss">
+                                <option value="STEM">STEM</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Arts">Arts</option>
+                                <option value="Finance">Finance</option>
                                 <option value="4">Law</option>
                             </select>
                         </li>
@@ -68,18 +68,18 @@
                     </li>
                     <li>
                         <label>Preferred Language</label>
-                        <select id="languageList" class="selectCss">
-                            <option value="1">English</option>
-                            <option value="1">Spanish</option>
-                            <option value="2">French</option>
-                            <option value="1">Mandarian</option>
-                            <option value="3">Portuguese</option>
-                            <option value="4">Japanese</option>
-                            <option value="1">Russian</option>
+                        <select name="language" id="languageList" class="selectCss">
+                            <option value="english">English</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="french">French</option>
+                            <option value="mandarin">Mandarian</option>
+                            <option value="portuguese">Portuguese</option>
+                            <option value="japanese">Japanese</option>
+                            <option value="russian">Russian</option>
                         </select>
                     </li>
                     <article class="buttons">
-                        <button id="submitBtn"> <a href="./maincontent.html">Create Profile</a> </button>
+                        <button id="submitBtn"> Create Profile </button>
 
                         <input id="cancelBtn" type="submit" value="Cancel">
                     </article>
