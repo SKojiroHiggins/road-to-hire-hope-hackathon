@@ -372,6 +372,7 @@ nav li a:hover{
     border-radius: 100%;
     margin-bottom: 20px;
     margin-top: 10px;
+    object-fit: cover;
 }
 
 .mentors ul {
