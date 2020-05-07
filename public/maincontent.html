@@ -110,6 +110,7 @@
                             let interest = createNode('p')
                             let distance = createNode('p')
                             let language = createNode('p')
+                            let button = createNode('button')
 
                             image.src = profileItem.img
                             name.innerText = profileItem.firstName + ' ' + profileItem.lastName
@@ -118,7 +119,7 @@
                             interest.innerText = 'Career: ' + profileItem.interest;
                             distance.innerText = 'Location: ' + profileItem.distance;
                             language.innerText = 'Language: ' + profileItem.language;
-
+                            button.innerText = 'Choose Mentor';
 
                             append(profileContainer, profileCard)
                             append(profileCard, image)
@@ -128,6 +129,7 @@
                             append(profileCard, interest)
                             append(profileCard, distance)
                             append(profileCard, language)
+                            append(profileCard, button)
                         }
                     })
 

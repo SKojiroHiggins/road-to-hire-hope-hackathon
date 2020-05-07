@@ -108,11 +108,18 @@ nav li a:hover{
     columns:gray;
 }
 
+/* Profile Image */
 #main-container img {
     width: 100px;
     height: 100px;
     object-fit: cover;
 }
+
+/* Select Mentor Button */
+#main-container button {
+    color: blue;
+}
+
 
   .heading{
     display: flex;
