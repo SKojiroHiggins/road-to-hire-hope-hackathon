@@ -93,12 +93,15 @@
                         if (profileItem.type == "student") {
                             userProfile = profileItem;
                         }
+                        
                     })
-                    
+                        console.log(userProfile)
+                        console.log(userProfile.looking)
                     
                     return data.map((profileItem) => {
                         // Need: mentor sorting
-                        if (profileItem.type === "Mentor" && profileItem.interest === userProfile.interest) {
+                        console.log(profileItem)
+                        if ((profileItem.type === userProfile.looking && profileItem.interest === userProfile.interest)) {
                             let profileCard = createNode('div')
                             let name = createNode('h3')
                             let profession = createNode('h4')

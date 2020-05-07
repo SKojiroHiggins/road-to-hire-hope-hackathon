@@ -73,8 +73,8 @@
         "firstName": "Harrison",
         "lastName": "Cameron",
         "profession": "Human Resource Assistant",
-        "type": "Mentor", 
-        "interest": "Law",
+        "type": "Tutor", 
+        "interest": "Tech",
         "distance": "17 miles",
         "language": "English",
         "img": "photos/Mentor5.jpeg"
