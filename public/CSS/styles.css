@@ -237,6 +237,7 @@ nav li a:hover{
 }
 
 .whatWeDo h2 {
+
     text-align: center;
     padding-top: 20px;
     color: #41B3A3;
@@ -255,6 +256,7 @@ nav li a:hover{
 }
 
 .card-1, .card-2, .card-3{
+   
     border: 3px dashed #41b3a3;
     background-color: rgb(230, 224, 224);
     margin: 5px;
