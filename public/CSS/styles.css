@@ -104,7 +104,7 @@ nav li a:hover{
     text-align: justify;
     font-weight: lighter;
     line-height:25px;
-    columns: #4e4e4e;
+    columns:gray;
 }
 
   .heading{
@@ -360,7 +360,7 @@ nav li a:hover{
     width: 155px;
     height: 155px;
     border:1px solid #E1e0DE;
-    border-radius: 50%;
+    border-radius: 100%;
     margin-bottom: 20px;
     margin-top: 10px;
 }
