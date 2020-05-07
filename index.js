@@ -49,7 +49,6 @@ app.get('/api/profiles', (req, res) => {
         return res.status(404).send("Resource was not found. Please try again.");
 
     }
-    console.log(profileData)
     res.send(profileData);
 });
 
