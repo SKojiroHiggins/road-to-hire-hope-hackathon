@@ -82,6 +82,9 @@
             return parent.appendChild(child);
         }
 
+        // Congratulating alert
+        const congrats = () => {alert("Congratulations! You are now set!")}
+
         window.onload = fetchUser = () => {
             fetch("/api/profiles")
                 .then((res) => {
@@ -120,6 +123,7 @@
                             distance.innerText = 'Location: ' + profileItem.distance;
                             language.innerText = 'Language: ' + profileItem.language;
                             button.innerText = 'Choose Mentor';
+                            button.setAttribute("onClick", "congrats()");
 
                             append(profileContainer, profileCard)
                             append(profileCard, image)
