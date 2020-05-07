@@ -120,9 +120,18 @@ nav li a:hover{
 
 /* Select Mentor Button */
 #main-container button {
-    color: blue;
+    margin-top: 40px;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 40px;
+    background:#e8a87c;
+    color: black;
 }
 
+#main-container button:hover {
+    color: white;
+    
+}
 
   .heading{
     display: flex;
@@ -345,7 +354,7 @@ nav li a:hover{
     height: 380px;
     display: flex;
     justify-content: flex-start;
-    margin: 10px;
+    margin: 10px 10px 25px 10px;
     border-radius: 20px;
     background: rgb(230, 224, 224);
     color: black;
@@ -395,8 +404,6 @@ nav li a:hover{
     display: grid;
     grid-template-columns: repeat(1, 2fr 1fr);
     padding: 20px;
-    /* background-color: #e8a87c; */
-    /* width: 90%; */
 }
 
 .suFormcontainer {
@@ -604,7 +611,7 @@ textarea {
 ----------------------------- */
 
 footer{
-    margin-top:300px;
+    margin-top:50px;
     background-color: #41B3A3;
     position: relative;
     bottom: 0;
