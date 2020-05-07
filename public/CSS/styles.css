@@ -104,7 +104,7 @@ nav li a:hover{
     text-align: justify;
     font-weight: lighter;
     line-height:25px;
-    columns: #4e4e4e;
+    columns:gray;
 }
 
   .heading{
@@ -338,10 +338,10 @@ span{
 }
 
  .mentor-img { 
-    width: 125px;
-    height: 125px;
+    width: 175px;
+    height: 175px;
     border:1px solid #E1e0DE;
-    border-radius: 50%;
+    border-radius: 100%;
     margin-bottom: 20px;
 }
 
