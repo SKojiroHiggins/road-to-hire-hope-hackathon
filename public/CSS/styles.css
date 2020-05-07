@@ -169,6 +169,7 @@ nav li a:hover{
     justify-content: center;
     align-items: center;
    
+   
 }
 
 .sign-up{ 
@@ -186,6 +187,7 @@ nav li a:hover{
 .sign-up a{
     transition: all 0.3s ease 0s;
     color:black;
+    text-decoration: none;
 }
 
 .sign-up a:hover{
