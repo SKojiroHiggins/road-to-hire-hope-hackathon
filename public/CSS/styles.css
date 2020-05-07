@@ -155,7 +155,7 @@ nav li a:hover{
 
 
 #hero-main{
-    background: url("/public/photos/heromentor.jpg") no-repeat center center/cover;
+    background: url("../photos/heromentor.jpg") no-repeat center center/cover;
     height:700px;
     display: flex;
     justify-content: center;
@@ -313,7 +313,7 @@ nav li a:hover{
 }
 
 .leftSide {
-    background: url("/public/photos/howitworks.jpg") no-repeat center center/cover;
+    background: url("../photos/howitworks.jpg") no-repeat center center/cover;
 }
 
 
