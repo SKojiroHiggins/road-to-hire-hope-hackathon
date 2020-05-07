@@ -115,9 +115,9 @@
                             name.innerText = profileItem.firstName + ' ' + profileItem.lastName
                             profession.innerText = profileItem.profession
                             type.innerText = profileItem.type;
-                            interest.innerText = profileItem.interest;
-                            distance.innerText = profileItem.distance;
-                            language.innerText = profileItem.language;
+                            interest.innerText = 'Career: ' + profileItem.interest;
+                            distance.innerText = 'Location: ' + profileItem.distance;
+                            language.innerText = 'Language: ' + profileItem.language;
 
 
                             append(profileContainer, profileCard)
