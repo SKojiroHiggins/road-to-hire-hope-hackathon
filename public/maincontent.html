@@ -95,14 +95,15 @@
                         }
                         
                     })
-                        console.log(userProfile)
-                        console.log(userProfile.looking)
+                    // test
+                        // console.log(userProfile)
+                        // console.log(userProfile.looking)
                     
                     return data.map((profileItem) => {
                         // Need: mentor sorting
-                        console.log(profileItem)
                         if ((profileItem.type === userProfile.looking && profileItem.interest === userProfile.interest)) {
                             let profileCard = createNode('div')
+                            let image = createNode('img')
                             let name = createNode('h3')
                             let profession = createNode('h4')
                             let type = createNode('p')
@@ -110,6 +111,7 @@
                             let distance = createNode('p')
                             let language = createNode('p')
 
+                            image.src = profileItem.img
                             name.innerText = profileItem.firstName + ' ' + profileItem.lastName
                             profession.innerText = profileItem.profession
                             type.innerText = profileItem.type;
@@ -119,6 +121,7 @@
 
 
                             append(profileContainer, profileCard)
+                            append(profileCard, image)
                             append(profileCard, name)
                             append(profileCard, profession)
                             append(profileCard, type)

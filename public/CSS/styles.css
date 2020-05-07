@@ -108,6 +108,12 @@ nav li a:hover{
     columns:gray;
 }
 
+#main-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
   .heading{
     display: flex;
     justify-content: center;
