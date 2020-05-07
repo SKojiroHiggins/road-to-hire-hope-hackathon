@@ -105,7 +105,7 @@ nav li a:hover{
     text-align: justify;
     font-weight: lighter;
     line-height:25px;
-    columns: #4e4e4e;
+    columns:gray;
 }
 
   .heading{
@@ -163,6 +163,7 @@ nav li a:hover{
     justify-content: center;
     align-items: center;
    
+   
 }
 
 .sign-up{ 
@@ -172,7 +173,7 @@ nav li a:hover{
     color: white;
     padding: 10px 37px;
     margin: 10px 0 20px 60px;
-    font-size: 20px;
+    font-size: 30px;
     
   
 }
@@ -194,8 +195,7 @@ nav li a:hover{
     background:#e8a87c;
     color: #f9f9f9;
     padding: 10px 37px;
-    margin: 10px 0 20px 60px;
-    font-size: 20px;
+    font-size: 40px;
     
 
 }
@@ -203,8 +203,8 @@ nav li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding: 50px;
 }
 
 .sign-up-bottom a{
@@ -234,14 +234,13 @@ nav li a:hover{
 /*Info Card Title: What We Do*/
 
 .whatWeDo {
-    background-color: #e27d60;
+    /* background-color: #e27d60; */
     height: 150px;
 }
 
 .whatWeDo h2 {
-
     text-align: center;
-    padding-top: 20px;
+    padding-top: 50px;
     color: #41B3A3;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
@@ -250,21 +249,35 @@ nav li a:hover{
     /* margin-top: 20px;
     margin-bottom: 10px; */
 }
+
 .infoCards{
-    height: 300px;
+    height: 350px;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 75px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.infoCards h3 {
+    font-size: 35px;
+    text-decoration: underline;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+.infoCards p {
+    line-height: 30px;
+
 }
 
 .card-1, .card-2, .card-3{
    
-    border: 3px dashed #41b3a3;
+    border: 2px solid #41b3a3;
     background-color: rgb(230, 224, 224);
     margin: 5px;
     text-align: center;
     border-radius: 1em;
-    width: 300px;
+    width: 320px;
 }
 
 /* HOW IT WORKS */
@@ -272,7 +285,8 @@ nav li a:hover{
 .hiwGrid {
     height: 300px;
     width: 100%;
-    padding: 60px 0px;
+    padding-top: 60px;
+    padding-bottom: 150px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(1, 2fr 1fr);
@@ -312,38 +326,46 @@ nav li a:hover{
 }
 
 .mentors{
-    height: 300px;
+    height: 380px;
     display: flex;
     justify-content: flex-start;
-    margin: 20px;
-    border-radius: 40px;
-    background:white;
+    margin: 10px;
+    border-radius: 20px;
+    background: rgb(230, 224, 224);
     color: black;
-    font-size: 20px;
     text-decoration: none;
+    padding-bottom: 25px;
 }
 
-span{
+.mentors h3 {
+    font-size: 30px;
+    padding-bottom: 10px;
     text-decoration: underline;
-    font-size: 25px;
 }
+
+.mentors ul {
+    font-size: 17px;
+    line-height: 20px;
+}
+
 
 #mentor-1, #mentor-2, #mentor-3, #mentor-4{
     text-align: center;
-    /* border: 1px solid #f9f9f9; */
+    border: 1px solid #f9f9f9;
     border-radius: 20px;
     margin: 15px;
-    height: 260px;
+    height: 345px;
     width: 25%;
     /* background-color: #41b3a3; */
 }
 
  .mentor-img { 
-    width: 125px;
-    height: 125px;
+    width: 155px;
+    height: 155px;
     border:1px solid #E1e0DE;
-    border-radius: 50%;
+    border-radius: 100%;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .mentors ul {
@@ -375,12 +397,7 @@ span{
     font-size: 25px;
     color: #E27D60;
 }
-.signUp{
-    height: 750px;
-    
-    /* margin: 30px 50px; */
-    /* border-radius: 40px; */
-}
+
 
 .signUp fieldset {
     border: none;
@@ -440,7 +457,6 @@ input[type=radio] {
     width: 200px;
     font-size: 20px;
     text-decoration: none;
-    font:"Montserrat",sans-serif;
 }
 /* .btn-submit:hover, .btn-cancel:hover{
     color: purple;
@@ -651,7 +667,7 @@ textarea {
 ----------------------------- */
 
 footer{
-    margin-top:100px;
+    margin-top:50px;
     background-color: #41B3A3;
     position: relative;
     bottom: 0;
