@@ -207,10 +207,13 @@ nav li a:hover{
 
 .sign-up-bottom a{
     text-decoration: none;
+    color:black;
 }
 
-.sign-up a{text-decoration: none;
 
+
+.sign-up-bottom a:hover{
+    color:white;
 }
 
 .sign-up:hover{
@@ -349,14 +352,23 @@ span{
     display: grid;
     grid-template-columns: repeat(1, 2fr 1fr);
     padding: 20px;
-    background-color: #e8a87c;
+    /* background-color: #e8a87c; */
     /* width: 90%; */
 }
 
 .suFormcontainer {
     padding-left: 150px;
 }
-
+.suHero{
+    text-align: center;
+    padding-top: 20px;
+    color: #41B3A3;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    background-color: #e27d60;
+    font-size: 50px;
+    height: 80px;
+}
 .signUp{
     height: 750px;
     
@@ -419,9 +431,9 @@ span{
     text-decoration: none;
     font:"Montserrat",sans-serif;
 }
-.btn-submit:hover, .btn-cancel:hover{
+/* .btn-submit:hover, .btn-cancel:hover{
     color: purple;
-}
+} */
 
 #submitBtn a{
     text-decoration: none;
