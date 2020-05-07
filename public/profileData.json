@@ -3,7 +3,7 @@
         "firstName": "fake firstName1",
         "lastName": "fake lastName1",
         "profession": "fake profession1",
-        "type": "fake type1", 
+        "type": "mentor", 
         "interest": "fake interest1",
         "distance": "fake distance1",
         "language": "fake language1"
@@ -12,7 +12,7 @@
         "firstName": "fake firstName2",
         "lastName": "fake lastName2",
         "profession": "fake profession1",
-        "type": "fake type2", 
+        "type": "tutor", 
         "interest": "fake interest2",
         "distance": "fake distance2",
         "language": "fake language2"
@@ -21,7 +21,7 @@
         "firstName": "fake firstName3",
         "lastName": "fake lastName3",
         "profession": "fake profession1",
-        "type": "fake type3", 
+        "type": "mentor", 
         "interest": "fake interest3",
         "distance": "fake distance3",
         "language": "fake language3"
