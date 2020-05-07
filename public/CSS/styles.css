@@ -501,6 +501,7 @@ input[type=radio] {
     display: grid;
     grid-template-columns: repeat(1, 2fr 1fr);
     padding: 20px;
+    margin-bottom: 500px;
 }
 
 
