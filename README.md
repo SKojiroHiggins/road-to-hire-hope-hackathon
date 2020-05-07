@@ -5,3 +5,23 @@ MENTOR MIXER is a matching application that helps students or mentees find and m
 Clone or download this repo onto your local machine. Once you have done this, install the node packages. You can do this by running npm i on your command line tool.
 
 # Running the app
+After you have installed all of the dependencies that are needed for this project, you can open the project on your command line tool. In your root directory of the project run npm index.js. From there you will go to the browser of your choice and enter localhost:5050. 
+
+# Stopping the app
+To stop running the server in your terminal hit control + c to close the server.
+
+# Built With 
+* NodeJS
+* JavaScript
+* HTML 
+* CSS
+
+# Authors
+* Adrianna Isom-Owen
+* Lenise Spann-Bell 
+* Skyler Kojiro Higgins 
+* Nathan Tadesse
+* Esau Aguilar Osuna 
+
+# License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
