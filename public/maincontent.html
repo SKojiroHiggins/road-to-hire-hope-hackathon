@@ -24,47 +24,8 @@
     <div class="heading">
         <h1>Your Mentors</h1>
     </div>
-<!-- 
-    <section id="main-container">
 
-        <div class="sub-container">
-            <div class="members">
-                <img src="photos/mosh.jpg" alt="photo of mosh">
-                <div class="name">John Doe</div>
-                <div class="post">Software Engineer</div>
-                <div class="desc">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, quisquam! In debitis quaerat eos
-                        culpa quibusdam molestiae porro, iusto qui ex commodi quo iste deserunt mollitia repellendus ab.
-                        Atque, cupiditate.</p>
-                </div>
-            </div>
-        </div>
-        <div class="sub-container">
-            <div class="members">
-                <img src="photos/mosh.jpg" alt="photo of mosh">
-                <div class="name">John Doe</div>
-                <div class="post">Software Engineer</div>
-                <div class="desc">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, eligendi. Labore distinctio eum
-                        iste corrupti ipsam veritatis voluptatum nemo. Incidunt voluptatum voluptatibus suscipit
-                        perspiciatis? Ipsa vel voluptatibus dolorem sit repudiandae.</p>
-                </div>
-            </div>
-        </div>
-        <div class="sub-container">
-            <div class="members">
-                <img src="photos/mosh.jpg" alt="photo of mosh">
-                <div class="name">John Doe</div>
-                <div class="post">Software Engineer</div>
-                <div class="desc">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempore quae fugiat, ullam
-                        fuga quas qui unde repellendus eum odit quos voluptate natus cupiditate obcaecati maxime
-                        debitis! Sed, architecto doloribus?</p>
-                </div>
-            </div>
-        </div>
-
-    </section> -->
+    <section id="main-container"></section>
 
 
 
@@ -127,40 +88,47 @@
                     return res.json()
                 })
                 .then((data) => {
-                    return data.map((profileItem) => {
-
-                        // Need: mentor sorting
-
-
-
-                        let profileCard = createNode('div')
-                        let name = createNode('h3')
-                        let profession = createNode('h4')
-                        let type = createNode('p')
-                        let interest = createNode('p')
-                        let distance = createNode('p')
-                        let language = createNode('p')
-
-                        name.innerText = profileItem.firstName + ' ' + profileItem.lastName
-                        profession.innerText = profileItem.profession
-                        type.innerText = profileItem.type;
-                        interest.innerText = profileItem.interest;
-                        distance.innerText = profileItem.distance;
-                        language.innerText = profileItem.language;
-
-
-                        append(profileContainer, profileCard)
-                        append(profileCard, name)
-                        append(profileCard, profession)
-                        append(profileCard, type)
-                        append(profileCard, interest)
-                        append(profileCard, distance)
-                        append(profileCard, language)
+                    let userProfile;
+                    data.map((profileItem) => {
+                        if (profileItem.type == "student") {
+                            userProfile = profileItem;
+                        }
                     })
+                    
+                    
+                    return data.map((profileItem) => {
+                        // Need: mentor sorting
+                        if (profileItem.type === "Mentor" && profileItem.interest === userProfile.interest) {
+                            let profileCard = createNode('div')
+                            let name = createNode('h3')
+                            let profession = createNode('h4')
+                            let type = createNode('p')
+                            let interest = createNode('p')
+                            let distance = createNode('p')
+                            let language = createNode('p')
+
+                            name.innerText = profileItem.firstName + ' ' + profileItem.lastName
+                            profession.innerText = profileItem.profession
+                            type.innerText = profileItem.type;
+                            interest.innerText = profileItem.interest;
+                            distance.innerText = profileItem.distance;
+                            language.innerText = profileItem.language;
+
+
+                            append(profileContainer, profileCard)
+                            append(profileCard, name)
+                            append(profileCard, profession)
+                            append(profileCard, type)
+                            append(profileCard, interest)
+                            append(profileCard, distance)
+                            append(profileCard, language)
+                        }
+                    })
+
                 })
-                .catch((err) => {
-                    console.log(err);
-                })
+                .catch ((err) => {
+            console.log(err);
+        })
         }
 
     </script>
