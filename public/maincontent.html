@@ -94,10 +94,16 @@
                             userProfile = profileItem;
                         }
                     })
-
+                    
+                    
                     return data.map((profileItem) => {
                         // Need: mentor sorting
-                        if (profileItem.type === "mentor" & profileItem.interest === userProfile.interest) {
+                        // console.log(profileItem.interest, userProfile.interest)
+                        console.log(profileItem.interest === userProfile.interest)
+                        console.log(profileItem.type == "Mentor")
+                        console.log(profileItem.type === "Mentor" && profileItem.interest === userProfile.interest)
+                        console.log(profileItem)
+                        if (profileItem.type === "Mentor" && profileItem.interest === userProfile.interest) {
                             let profileCard = createNode('div')
                             let name = createNode('h3')
                             let profession = createNode('h4')
