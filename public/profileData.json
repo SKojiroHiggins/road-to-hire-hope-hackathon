@@ -10,24 +10,114 @@
         "img": "photos/Mentor1.jpeg"
     },
     {
+        "firstName": "Zarra",
+        "lastName": "Best",
+        "profession": "Computer Hardware Engineer",
+        "type": "Mentor", 
+        "interest": "Tech",
+        "distance": "10 miles",
+        "language": "Russian",
+        "img": "photos/Mentor10.jpeg"
+    },
+    {
+        "firstName": "Cassie",
+        "lastName": "James",
+        "profession": "Back-End Developer",
+        "type": "Mentor", 
+        "interest": "Tech",
+        "distance": "10 miles",
+        "language": "Mandarin",
+        "img": "photos/Mentor9.jpeg"
+    },
+    {
+        "firstName": "Jessica",
+        "lastName": "Jones",
+        "profession": "Database Adminstrator",
+        "type": "Tutor", 
+        "interest": "Tech",
+        "distance": "4 miles",
+        "language": "English",
+        "img": "photos/Mentor6.jpeg"
+    },
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "profession": "Computer Hardware Engineer",
+        "type": "Tutor", 
+        "interest": "Tech",
+        "distance": "10 miles",
+        "language": "Japanese",
+        "img": "photos/Mentor2.jpeg"
+    },
+    {
+        "firstName": "Peter",
+        "lastName": "Parker",
+        "profession": "Back-End Developer",
+        "type": "Tutor", 
+        "interest": "Tech",
+        "distance": "10 miles",
+        "language": "French",
+        "img": "photos/Mentor9.jpeg"
+    },
+    {
         "firstName": "Michael",
         "lastName": "Bland",
         "profession": "Corporate Tax Attorney",
-        "type": "Mentor", 
+        "type": "Tutor", 
         "interest": "Finance",
         "distance": "23 miles",
         "language": "English",
         "img": "photos/Mentor2.jpeg"
     },
     {
+        "firstName": "Jose",
+        "lastName": "Flores",
+        "profession": "Senior Financial Analyst",
+        "type": "Tutor", 
+        "interest": "Finance",
+        "distance": "12 miles",
+        "language": "Spanish",
+        "img": "photos/Mentor7.jpeg"
+    },
+    {
+        "firstName": "Jerry",
+        "lastName": "Springer",
+        "profession": "Attorney",
+        "type": "Tutor", 
+        "interest": "Finance",
+        "distance": "23 miles",
+        "language": "Russian",
+        "img": "photos/Mentor5.jpeg"
+    },
+    {
         "firstName": "Sara",
         "lastName": "Carson",
-        "profession": "Senior Financial Analyst",
+        "profession": "Accountant",
         "type": "Mentor", 
         "interest": "Finance",
         "distance": "12 miles",
         "language": "Portuguese",
         "img": "photos/Mentor6.jpeg"
+    },
+    {
+        "firstName": "Miranda",
+        "lastName": "Lambert",
+        "profession": "Investor Relations Associate",
+        "type": "Mentor", 
+        "interest": "Finance",
+        "distance": "12 miles",
+        "language": "English",
+        "img": "photos/Mentor1.jpeg"
+    },
+    {
+        "firstName": "Kyle",
+        "lastName": "Man",
+        "profession": "Actuary",
+        "type": "Mentor", 
+        "interest": "Finance",
+        "distance": "12 miles",
+        "language": "English",
+        "img": "photos/Mentor3.jpeg"
     },
     {
         "firstName": "Bryan",
@@ -40,6 +130,116 @@
         "img": "photos/Mentor4.jpeg"
     },
     {
+        "firstName": "Uzair",
+        "lastName": "Mcfarlane",
+        "profession": "Enviromental scientist",
+        "type": "Mentor", 
+        "interest": "Science",
+        "distance": "24 miles",
+        "language": "Spanish",
+        "img": "photos/Mentor7.jpeg"
+    },
+    {
+        "firstName": "Jackie",
+        "lastName": "Perry",
+        "profession": "Biochemistry",
+        "type": "Mentor", 
+        "interest": "Science",
+        "distance": "23 miles",
+        "language": "French",
+        "img": "photos/Mentor6.jpeg"
+    },
+    {
+        "firstName": "David",
+        "lastName": "Blane",
+        "profession": "Genetics",
+        "type": "Tutor", 
+        "interest": "Science",
+        "distance": "12 miles",
+        "language": "Russian",
+        "img": "photos/Mentor2.jpeg"
+    },
+    {
+        "firstName": "Liza",
+        "lastName": "Simpson",
+        "profession": "Neuroscience",
+        "type": "Tutor", 
+        "interest": "Science",
+        "distance": "6 miles",
+        "language": "Japanese",
+        "img": "photos/Mentor9.jpeg"
+    },
+    {
+        "firstName": "Vanessa",
+        "lastName": "Hudgens",
+        "profession": "Life Sciences",
+        "type": "Tutor", 
+        "interest": "Science",
+        "distance": "3 miles",
+        "language": "English",
+        "img": "photos/Mentor10.jpeg"
+    },
+    {
+        "firstName": "Tyrone",
+        "lastName": "Buckley",
+        "profession": "Physical Therapist",
+        "type": "Tutor", 
+        "interest": "Healthcare",
+        "distance": "25 miles",
+        "language": "French",
+        "img": "photos/Mentor3.jpeg"
+    },
+    {
+        "firstName": "Lex",
+        "lastName": "Drew",
+        "profession": "Medical Secretary",
+        "type": "Tutor", 
+        "interest": "Healthcare",
+        "distance": "23 miles",
+        "language": "Mandarin",
+        "img": "photos/Mentor8.jpeg"
+    },
+    {
+        "firstName": "Linsday",
+        "lastName": "Lohan",
+        "profession": "Therapist",
+        "type": "Tutor", 
+        "interest": "Healthcare",
+        "distance": "45 miles",
+        "language": "Portuguese",
+        "img": "photos/Mentor10.jpeg"
+    },
+    {
+        "firstName": "Tyrone",
+        "lastName": "Buckley",
+        "profession": "Pharmacist",
+        "type": "Mentor", 
+        "interest": "Healthcare",
+        "distance": "25 miles",
+        "language": "English",
+        "img": "photos/Mentor4.jpeg"
+    },
+    {
+        "firstName": "Chris",
+        "lastName": "Pratt",
+        "profession": "Clinical Laboratory Technician",
+        "type": "Mentor", 
+        "interest": "Healthcare",
+        "distance": "27 miles",
+        "language": "Russian",
+        "img": "photos/Mentor2.jpeg"
+    },
+    {
+        "firstName": "Adrianna",
+        "lastName": "Moore",
+        "profession": "Radiologic Technologist",
+        "type": "Mentor", 
+        "interest": "Healthcare",
+        "distance": "45 miles",
+        "language": "Spanish",
+        "img": "photos/Mentor1.jpeg"
+    },
+    {
         "firstName": "Corrie",
         "lastName": "Nash",
         "profession": "Architect",
@@ -50,53 +250,113 @@
         "img": "photos/Mentor9.jpeg"
     },
     {
-        "firstName": "Zarra",
-        "lastName": "Best",
-        "profession": "Computer Hardware Engineer",
+        "firstName": "Luke",
+        "lastName": "Skywalker",
+        "profession": "Art Director",
         "type": "Mentor", 
-        "interest": "Tech",
-        "distance": "10 miles",
-        "language": "Russian",
+        "interest": "Arts",
+        "distance": "23 miles",
+        "language": "Japanese",
+        "img": "photos/Mentor8.jpeg"
+    },
+    {
+        "firstName": "Leia",
+        "lastName": "Skywalker",
+        "profession": "Commercial Artist",
+        "type": "Mentor", 
+        "interest": "Arts",
+        "distance": "2 miles",
+        "language": "Spanish",
         "img": "photos/Mentor10.jpeg"
     },
     {
-        "firstName": "Tyrone",
-        "lastName": "Buckley",
-        "profession": "Physical Therapist",
-        "type": "Both", 
-        "interest": "Healthcare",
-        "distance": "25 miles",
-        "language": "French",
+        "firstName": "Lance",
+        "lastName": "Armstrong",
+        "profession": "Animator",
+        "type": "Tutor", 
+        "interest": "Arts",
+        "distance": "34 miles",
+        "language": "English",
+        "img": "photos/Mentor2.jpeg"
+    },
+    {
+        "firstName": "Anakin",
+        "lastName": "Skywalker",
+        "profession": "Graphic Designer",
+        "type": "Tutor", 
+        "interest": "Arts",
+        "distance": "3 miles",
+        "language": "Portuguese",
         "img": "photos/Mentor3.jpeg"
+    },
+    {
+        "firstName": "Michael",
+        "lastName": "Jordan",
+        "profession": "Advertising Designer",
+        "type": "Tutor", 
+        "interest": "Arts",
+        "distance": "10 miles",
+        "language": "Russian",
+        "img": "photos/Mentor5.jpeg"
     },
     {
         "firstName": "Harrison",
         "lastName": "Cameron",
         "profession": "Human Resource Assistant",
         "type": "Tutor", 
-        "interest": "Tech",
+        "interest": "Law",
         "distance": "17 miles",
         "language": "English",
         "img": "photos/Mentor5.jpeg"
     },
     {
-        "firstName": "Uzair",
-        "lastName": "Mcfarlane",
-        "profession": "Enviromental scientist",
+        "firstName": "Marge",
+        "lastName": "Jess",
+        "profession": "Civil Rights Attorney",
         "type": "Tutor", 
-        "interest": "Science",
-        "distance": "3 miles",
-        "language": "Spanish",
-        "img": "photos/Mentor7.jpeg"
+        "interest": "Law",
+        "distance": "13 miles",
+        "language": "French",
+        "img": "photos/Mentor1.jpeg"
     },
     {
-        "firstName": "Lex",
-        "lastName": "Drew",
-        "profession": "Medical Secretary",
-        "type": "Both", 
-        "interest": "Healthcare",
+        "firstName": "James",
+        "lastName": "Crew",
+        "profession": "Tax Lawyer",
+        "type": "Tutor", 
+        "interest": "Law",
         "distance": "23 miles",
+        "language": "Spanish",
+        "img": "photos/Mentor4.jpeg"
+    },
+    {
+        "firstName": "Kacey",
+        "lastName": "Knight",
+        "profession": "Environmental Lawyer",
+        "type": "Mentor", 
+        "interest": "Law",
+        "distance": "14 miles",
+        "language": "Russian",
+        "img": "photos/Mentor9.jpeg"
+    },
+    {
+        "firstName": "Mary",
+        "lastName": "Lane",
+        "profession": "Criminal Defense Attorney",
+        "type": "Mentor", 
+        "interest": "Law",
+        "distance": "5 miles",
+        "language": "Japanese",
+        "img": "photos/Mentor10.jpeg"
+    },
+    {
+        "firstName": "Omar",
+        "lastName": "Jimenez",
+        "profession": "Business / Corporate Law Attorney",
+        "type": "Mentor", 
+        "interest": "Law",
+        "distance": "6 miles",
         "language": "Mandarin",
-        "img": "photos/Mentor8.jpeg"
+        "img": "photos/Mentor7.jpeg"
     }
 ]
