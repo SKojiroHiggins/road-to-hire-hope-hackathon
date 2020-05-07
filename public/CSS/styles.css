@@ -179,6 +179,7 @@ nav li a:hover{
 .sign-up a{
     transition: all 0.3s ease 0s;
     color:black;
+    text-decoration: none;
 }
 
 .sign-up a:hover{
@@ -237,6 +238,7 @@ nav li a:hover{
 }
 
 .whatWeDo h2 {
+
     text-align: center;
     padding-top: 20px;
     color: #41B3A3;
@@ -255,6 +257,7 @@ nav li a:hover{
 }
 
 .card-1, .card-2, .card-3{
+   
     border: 3px dashed #41b3a3;
     background-color: rgb(230, 224, 224);
     margin: 5px;
@@ -359,15 +362,17 @@ span{
 .suFormcontainer {
     padding-left: 150px;
 }
-.suHero{
+.suHero h2 {
     text-align: center;
     padding-top: 20px;
-    color: #41B3A3;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: black;
-    background-color: #e27d60;
+    color: black;
     font-size: 50px;
     height: 80px;
+}
+
+.suHero h3 {
+    font-size: 25px;
+    color: #E27D60;
 }
 .signUp{
     height: 750px;
@@ -378,12 +383,14 @@ span{
 
 .signUp fieldset {
     border: none;
+    margin-bottom: 20px;
 }
 
 .signUp legend {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 50px;
-    font-size: 20px;
+    font-size: 30px;
+    color: #E27D60;
 }
 
 .signUp label {
@@ -393,7 +400,7 @@ span{
 
 .signUp li {
     list-style: none;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     
 }
 
@@ -407,6 +414,9 @@ span{
     /* width: 200px; */
 }
 
+input[type=radio] {
+ margin: 0px 10px;
+}
 
 .featured-img {
  position: relative;
@@ -583,7 +593,6 @@ label {
 
 input[type=text], textarea {
     padding: 5px 10px;
-    /* margin: 10px; */
     display: inline-block;
     border-radius: 4px;
     box-sizing: border-box;
@@ -641,7 +650,10 @@ textarea {
 ----------------------------- */
 
 footer{
+    margin-top:100px;
     background-color: #41B3A3;
+    position: relative;
+    bottom: 0;
 }
 
 .footerContainer {
